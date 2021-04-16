@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:00:46
- * @LastEditTime: 2021-04-16 15:49:41
+ * @LastEditTime: 2021-04-16 16:06:49
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/main.ts
  * @Description:
@@ -21,6 +21,6 @@ async function bootstrap() {
   app.enableCors();
   app.setGlobalPrefix('api/arthemis');
   app.useGlobalInterceptors(app.get(ResponseInterceptor));
-  await app.listen(4000);
+  await app.listen(3600);
 }
 bootstrap();
