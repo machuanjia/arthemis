@@ -14,6 +14,7 @@ const task_module_1 = require("./task/task.module");
 const config_1 = require("@nestjs/config");
 const db_module_1 = require("./db/db.module");
 const res_interceptor_1 = require("./core/res.interceptor");
+const user_module_1 = require("./user/user.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -24,6 +25,7 @@ AppModule = __decorate([
             }),
             db_module_1.DbModule,
             task_module_1.TaskModule,
+            user_module_1.UserModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService, res_interceptor_1.ResponseInterceptor],

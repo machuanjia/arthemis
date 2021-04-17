@@ -13,6 +13,7 @@ import { TaskModule } from './task/task.module';
 import { ConfigModule } from '@nestjs/config';
 import { DbModule } from './db/db.module';
 import { ResponseInterceptor } from './core/res.interceptor';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { ResponseInterceptor } from './core/res.interceptor';
     }),
     DbModule,
     TaskModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService, ResponseInterceptor],

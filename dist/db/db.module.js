@@ -10,7 +10,8 @@ exports.DbModule = void 0;
 const common_1 = require("@nestjs/common");
 const nestjs_typegoose_1 = require("nestjs-typegoose");
 const task_schema_1 = require("./schema/task.schema");
-const models = nestjs_typegoose_1.TypegooseModule.forFeature([task_schema_1.TaskSchema]);
+const user_schema_1 = require("./schema/user.schema");
+const models = nestjs_typegoose_1.TypegooseModule.forFeature([task_schema_1.TaskSchema, user_schema_1.UserSchema]);
 let DbModule = class DbModule {
 };
 DbModule = __decorate([
