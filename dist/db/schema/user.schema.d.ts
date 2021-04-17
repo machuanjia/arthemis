@@ -1,4 +1,4 @@
 export declare class UserSchema {
-    name: string;
+    username: string;
     password: string;
 }

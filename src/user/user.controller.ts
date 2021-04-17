@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-16 19:18:46
- * @LastEditTime: 2021-04-17 09:23:42
+ * @LastEditTime: 2021-04-17 09:52:20
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/user/user.controller.ts
  * @Description:
@@ -14,6 +14,7 @@ import {
   Param,
   Post,
   Put,
+  Query,
   Req,
 } from '@nestjs/common';
 import { Request } from 'express';
@@ -49,7 +50,12 @@ export class UserController {
   }
 
   @Get()
-  async getUsers(@Req() req: Request) {
-    return this.userService.getUsers();
+  async getUsers(
+    @Req() req: Request,
+    @Query('keyword') keyword: string,
+    @Query('pi') pi: number,
+    @Query('ps') ps: number,
+  ) {
+    return this.userService.getUsers(keyword, pi, ps);
   }
 }

@@ -31,8 +31,8 @@ let UserController = class UserController {
     async deleteUser(req, _id) {
         return this.userService.deleteUser(_id);
     }
-    async getUsers(req) {
-        return this.userService.getUsers();
+    async getUsers(req, keyword, pi, ps) {
+        return this.userService.getUsers(keyword, pi, ps);
     }
 };
 __decorate([
@@ -68,8 +68,11 @@ __decorate([
 __decorate([
     common_1.Get(),
     __param(0, common_1.Req()),
+    __param(1, common_1.Query('keyword')),
+    __param(2, common_1.Query('pi')),
+    __param(3, common_1.Query('ps')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [Object, String, Number, Number]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "getUsers", null);
 UserController = __decorate([

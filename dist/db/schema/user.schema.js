@@ -12,16 +12,25 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserSchema = void 0;
 const typegoose_1 = require("@typegoose/typegoose");
 const class_validator_1 = require("class-validator");
+const bcryptjs_1 = require("bcryptjs");
 let UserSchema = class UserSchema {
 };
 __decorate([
     class_validator_1.IsString(),
     typegoose_1.prop({ required: true }),
     __metadata("design:type", String)
-], UserSchema.prototype, "name", void 0);
+], UserSchema.prototype, "username", void 0);
 __decorate([
     class_validator_1.IsString(),
-    typegoose_1.prop(),
+    typegoose_1.prop({
+        select: false,
+        get(val) {
+            return val;
+        },
+        set(val) {
+            return val ? bcryptjs_1.hashSync(val) : val;
+        },
+    }),
     __metadata("design:type", String)
 ], UserSchema.prototype, "password", void 0);
 UserSchema = __decorate([

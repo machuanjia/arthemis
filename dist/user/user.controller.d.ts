@@ -8,5 +8,9 @@ export declare class UserController {
     getUserDetail(req: Request, _id: string): Promise<import("@typegoose/typegoose").DocumentType<import("../db/schema/user.schema").UserSchema>>;
     updateUser(req: Request, _id: string, dao: User): Promise<import("@typegoose/typegoose").DocumentType<import("../db/schema/user.schema").UserSchema>>;
     deleteUser(req: Request, _id: string): Promise<boolean>;
-    getUsers(req: Request): Promise<import("@typegoose/typegoose").DocumentType<import("../db/schema/user.schema").UserSchema>[]>;
+    getUsers(req: Request, keyword: string, pi: number, ps: number): Promise<{
+        page: number;
+        total: number;
+        data: import("@typegoose/typegoose").DocumentType<import("../db/schema/user.schema").UserSchema>[];
+    }>;
 }

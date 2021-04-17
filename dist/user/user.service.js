@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserService = void 0;
 const common_1 = require("@nestjs/common");
 const nestjs_typegoose_1 = require("nestjs-typegoose");
+const constant_1 = require("../constant");
 const user_schema_1 = require("../db/schema/user.schema");
 let UserService = class UserService {
     constructor(userModel) {
@@ -34,8 +35,30 @@ let UserService = class UserService {
         await this.userModel.findByIdAndDelete(_id);
         return true;
     }
-    async getUsers() {
-        return this.userModel.find();
+    async getUsers(keyword, pi, ps) {
+        const findOptions = {};
+        let regexp = '';
+        const pageIndex = parseInt(pi || 0);
+        const pageSize = parseInt(ps || constant_1.PAGINATION.SIZE);
+        if (keyword) {
+            regexp = new RegExp(keyword, 'i');
+            findOptions.$and = [{ username: { $regex: regexp } }];
+        }
+        const total = await this.userModel
+            .find(findOptions)
+            .skip(pageIndex * pageSize)
+            .limit(pageSize)
+            .count();
+        const users = await this.userModel
+            .find(findOptions)
+            .skip(pageIndex * pageSize)
+            .limit(pageSize)
+            .sort({ _id: -1 });
+        return {
+            page: pageIndex,
+            total: total,
+            data: users,
+        };
     }
 };
 UserService = __decorate([

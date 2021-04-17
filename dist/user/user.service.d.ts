@@ -1,5 +1,5 @@
 import { ReturnModelType } from '@typegoose/typegoose';
-import { UserSchema } from 'src/db/schema/user.schema';
+import { UserSchema } from '../db/schema/user.schema';
 import { User } from './user.entity';
 export declare class UserService {
     private readonly userModel;
@@ -8,5 +8,9 @@ export declare class UserService {
     getUserDetail(_id: string): Promise<import("@typegoose/typegoose").DocumentType<UserSchema>>;
     updateUser(_id: string, dao: User): Promise<import("@typegoose/typegoose").DocumentType<UserSchema>>;
     deleteUser(_id: string): Promise<boolean>;
-    getUsers(): Promise<import("@typegoose/typegoose").DocumentType<UserSchema>[]>;
+    getUsers(keyword: any, pi: any, ps: any): Promise<{
+        page: number;
+        total: number;
+        data: import("@typegoose/typegoose").DocumentType<UserSchema>[];
+    }>;
 }

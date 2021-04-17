@@ -15,6 +15,7 @@ const config_1 = require("@nestjs/config");
 const db_module_1 = require("./db/db.module");
 const res_interceptor_1 = require("./core/res.interceptor");
 const user_module_1 = require("./user/user.module");
+const auth_module_1 = require("./auth/auth.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -26,6 +27,7 @@ AppModule = __decorate([
             db_module_1.DbModule,
             task_module_1.TaskModule,
             user_module_1.UserModule,
+            auth_module_1.AuthModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService, res_interceptor_1.ResponseInterceptor],
