@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:23:55
- * @LastEditTime: 2021-04-15 17:08:46
+ * @LastEditTime: 2021-04-19 14:04:31
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.service.ts
  * @Description:
@@ -12,6 +12,7 @@ import { InjectModel } from 'nestjs-typegoose';
 import { TaskSchema } from '../db/schema/task.schema';
 import { Task } from './task.entity';
 import { maxBy } from 'lodash';
+import { TomatoSummarySchema } from 'src/db/schema/tomato.summary.schema';
 
 @Injectable()
 export class TaskService {
@@ -19,6 +20,10 @@ export class TaskService {
   constructor(
     @InjectModel(TaskSchema)
     private readonly taskModel: ReturnModelType<typeof TaskSchema>,
+    @InjectModel(TomatoSummarySchema)
+    private readonly taskSummaryModel: ReturnModelType<
+      typeof TomatoSummarySchema
+    >,
   ) {}
   async createTask(dao: Task): Promise<Task> {
     const groups = await this.taskModel.find({ group: dao.group });
@@ -117,5 +122,26 @@ export class TaskService {
       }));
 
     return await this.taskModel.find(options);
+  }
+  async updateTaskSummary(summary: { content: string; dateNumber: number }) {
+    const sum = await this.taskSummaryModel.find({
+      dateNumber: summary.dateNumber,
+    });
+    if (sum && sum.length > 0) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      await this.taskSummaryModel.findByIdAndUpdate(sum._id, {
+        content: summary.content,
+      });
+    } else {
+      await this.taskSummaryModel.create({
+        content: summary.content,
+        dateNumber: summary.dateNumber,
+      });
+    }
+    return true;
+  }
+  async getTaskSummary(dateNumber: number) {
+    return await this.taskSummaryModel.findOne({ dateNumber });
   }
 }

@@ -2216,9 +2216,14 @@
         "signature": "9ba84e463eabb2a08981ab49b121e693e6a7a10fa044ba9910d387c39d8244b2",
         "affectsGlobalScope": false
       },
+      "../src/db/schema/tomato.summary.schema.ts": {
+        "version": "6723bcf0b0ce4372829075045fc1108c5ee80436cbcc22dc4226274e9241a45f",
+        "signature": "7d0ccf3749f45c196d260c198d42feae3cf37a6f49ab0ffd771555896ed56dc4",
+        "affectsGlobalScope": false
+      },
       "../src/task/task.service.ts": {
-        "version": "a9bedde3cf1ac0b7afb9f7d2d3666baa79cd845d70bfc198ad3fbe376122dba5",
-        "signature": "aac840fcc3bb9d01e425ce792fb8ce53df556ff85f2273da56ae1bdb93b8005c",
+        "version": "07bad658a0554b6ffdf63491c976e3c4a16b018b7f61ee4dc1465113ef4b0cc3",
+        "signature": "d02b50cddf077a9b12b1a83a6d9f9922186203b828ed9b2bd8fdb18719e423d9",
         "affectsGlobalScope": false
       },
       "../src/task/task.controller.ts": {
@@ -2226,8 +2231,13 @@
         "signature": "4c4c4e6d743dcaca8043b3d1bb600a4ecb2054d177efe9fb208b586d974ef7e4",
         "affectsGlobalScope": false
       },
+      "../src/task/task.summary.controller.ts": {
+        "version": "eeb5e685c22298833df5fbe90206ac0453d8af18dc4b8f2e4a4689a824ac20ea",
+        "signature": "e9255a51ae2ac0486cf8bb8fa42ab800f4661b0071937b75e5e1c7c515e06d5c",
+        "affectsGlobalScope": false
+      },
       "../src/task/task.module.ts": {
-        "version": "e40ed014af9fcc909a2cbe71f656b65b19c4790ee0dfbc67d301ab613ed12230",
+        "version": "5b643d820a0b4345ef5e87e021cbe9adfccc8f8f513005ad3c4611d6219f2a45",
         "signature": "e8f1bca3cc46ab477ded80ab60d1f1a79e912f0d6338b1af6b2635b5a0b4bff9",
         "affectsGlobalScope": false
       },
@@ -2302,7 +2312,7 @@
         "affectsGlobalScope": false
       },
       "../src/db/db.module.ts": {
-        "version": "4b5619bd5b4125cac706fa549a6b1e4421fea6254236fa83d0c4d3ec3f5e992c",
+        "version": "866d63ea24d880e32b48651f6c66e3f050ebd30d226d4ea2d06f946e8d185e72",
         "signature": "99618673a337d72adab8f797bda545d4b51eb728eae68233ab6ff01c075de1c3",
         "affectsGlobalScope": false
       },
@@ -7631,9 +7641,16 @@
         "../node_modules/mongoose/index.d.ts",
         "../node_modules/nestjs-typegoose/dist/index.d.ts",
         "../src/db/schema/task.schema.ts",
+        "../src/db/schema/tomato.summary.schema.ts",
         "../src/db/schema/user.schema.ts"
       ],
       "../src/db/schema/task.schema.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/class-validator/types/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../src/db/schema/tomato.summary.schema.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts",
@@ -7672,7 +7689,8 @@
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
         "../src/task/task.controller.ts",
-        "../src/task/task.service.ts"
+        "../src/task/task.service.ts",
+        "../src/task/task.summary.controller.ts"
       ],
       "../src/task/task.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7681,7 +7699,16 @@
         "../node_modules/mongoose/index.d.ts",
         "../node_modules/nestjs-typegoose/dist/index.d.ts",
         "../src/db/schema/task.schema.ts",
+        "../src/db/schema/tomato.summary.schema.ts",
         "../src/task/task.entity.ts"
+      ],
+      "../src/task/task.summary.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts",
+        "../src/task/task.entity.ts",
+        "../src/task/task.service.ts"
       ],
       "../src/user/user.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -11823,7 +11850,14 @@
       "../src/task/task.service.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../src/db/schema/task.schema.ts",
+        "../src/db/schema/tomato.summary.schema.ts",
         "../src/task/task.entity.ts"
+      ],
+      "../src/task/task.summary.controller.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../node_modules/@types/express/index.d.ts",
+        "../src/db/schema/tomato.summary.schema.ts",
+        "../src/task/task.service.ts"
       ],
       "../src/user/user.controller.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",

@@ -17,9 +17,11 @@ const common_1 = require("@nestjs/common");
 const nestjs_typegoose_1 = require("nestjs-typegoose");
 const task_schema_1 = require("../db/schema/task.schema");
 const lodash_1 = require("lodash");
+const tomato_summary_schema_1 = require("../db/schema/tomato.summary.schema");
 let TaskService = class TaskService {
-    constructor(taskModel) {
+    constructor(taskModel, taskSummaryModel) {
         this.taskModel = taskModel;
+        this.taskSummaryModel = taskSummaryModel;
         this.subPosition = Math.pow(2, 10);
     }
     async createTask(dao) {
@@ -100,11 +102,32 @@ let TaskService = class TaskService {
             }));
         return await this.taskModel.find(options);
     }
+    async updateTaskSummary(summary) {
+        const sum = await this.taskSummaryModel.find({
+            dateNumber: summary.dateNumber,
+        });
+        if (sum && sum.length > 0) {
+            await this.taskSummaryModel.findByIdAndUpdate(sum._id, {
+                content: summary.content,
+            });
+        }
+        else {
+            await this.taskSummaryModel.create({
+                content: summary.content,
+                dateNumber: summary.dateNumber,
+            });
+        }
+        return true;
+    }
+    async getTaskSummary(dateNumber) {
+        return await this.taskSummaryModel.findOne({ dateNumber });
+    }
 };
 TaskService = __decorate([
     common_1.Injectable(),
     __param(0, nestjs_typegoose_1.InjectModel(task_schema_1.TaskSchema)),
-    __metadata("design:paramtypes", [Object])
+    __param(1, nestjs_typegoose_1.InjectModel(tomato_summary_schema_1.TomatoSummarySchema)),
+    __metadata("design:paramtypes", [Object, Object])
 ], TaskService);
 exports.TaskService = TaskService;
 //# sourceMappingURL=task.service.js.map
