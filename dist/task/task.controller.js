@@ -17,12 +17,14 @@ const common_1 = require("@nestjs/common");
 const task_service_1 = require("./task.service");
 const current_user_decorator_1 = require("../auth/current-user.decorator");
 const passport_1 = require("@nestjs/passport");
+const constant_1 = require("../constant");
 let TaskController = class TaskController {
     constructor(taskService) {
         this.taskService = taskService;
     }
     async createTask(req, dto, user) {
         dto.user = user._id;
+        dto.type = constant_1.TASK_TYPES.tomato;
         return this.taskService.createTask(Object.assign(Object.assign({}, dto), { tomato: 0 }));
     }
     async getTaskDetail(req, _id) {

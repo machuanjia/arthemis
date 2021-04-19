@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:22:57
- * @LastEditTime: 2021-04-19 19:17:51
+ * @LastEditTime: 2021-04-19 19:24:52
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.controller.ts
  * @Description:
@@ -23,6 +23,7 @@ import { TaskService } from './task.service';
 import { Request } from 'express';
 import { CurrentUser } from 'src/auth/current-user.decorator';
 import { AuthGuard } from '@nestjs/passport';
+import { TASK_TYPES } from 'src/constant';
 
 @Controller('tasks')
 export class TaskController {
@@ -36,6 +37,7 @@ export class TaskController {
     @CurrentUser() user,
   ): Promise<Task> {
     dto.user = user._id;
+    dto.type = TASK_TYPES.tomato;
     return this.taskService.createTask({
       ...dto,
       tomato: 0,

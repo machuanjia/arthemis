@@ -1,6 +1,7 @@
 export interface Task {
     _id?: string;
     name?: string;
+    type?: number;
     state?: number;
     important?: number;
     urgent?: number;

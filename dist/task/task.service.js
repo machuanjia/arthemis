@@ -36,7 +36,7 @@ let TaskService = class TaskService {
         return await this.taskModel.create(dao);
     }
     async getTaskDetail(_id) {
-        return await this.taskModel.findById(_id);
+        return await this.taskModel.findById(_id).populate('user');
     }
     async sortTask(_id, info) {
         let position = 0;
@@ -72,7 +72,7 @@ let TaskService = class TaskService {
     }
     async updateTask(_id, dto) {
         await this.taskModel.findOneAndUpdate({ _id }, dto);
-        return await this.taskModel.findById(_id);
+        return await this.taskModel.findById(_id).populate('user');
     }
     async deleteTask(_id) {
         await this.taskModel.findByIdAndDelete(_id);

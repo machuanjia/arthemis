@@ -23,6 +23,11 @@ __decorate([
     class_validator_1.IsNumber(),
     typegoose_1.prop(),
     __metadata("design:type", Number)
+], TaskSchema.prototype, "type", void 0);
+__decorate([
+    class_validator_1.IsNumber(),
+    typegoose_1.prop(),
+    __metadata("design:type", Number)
 ], TaskSchema.prototype, "state", void 0);
 __decorate([
     class_validator_1.IsNumber(),

@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 11:48:18
- * @LastEditTime: 2021-04-19 19:10:48
+ * @LastEditTime: 2021-04-19 19:25:21
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/db/schema/task.schema.ts
  * @Description:
@@ -19,6 +19,10 @@ export class TaskSchema {
   @IsString()
   @prop({ required: true })
   name: string;
+
+  @IsNumber()
+  @prop()
+  type: number;
 
   @IsNumber()
   @prop()
