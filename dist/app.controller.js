@@ -21,6 +21,7 @@ let AppController = class AppController {
         this.appService = appService;
     }
     getHello(res) {
+        console.log('======================');
         res.sendFile(path_1.join(__dirname, '../public/', 'index.html'));
     }
 };

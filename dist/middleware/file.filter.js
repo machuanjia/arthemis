@@ -6,12 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserController = void 0;
+exports.NotFoundExceptionFilter = void 0;
 const common_1 = require("@nestjs/common");
-let UserController = class UserController {
+const path_1 = require("path");
+let NotFoundExceptionFilter = class NotFoundExceptionFilter {
+    catch(exception, host) {
+        const ctx = host.switchToHttp();
+        const response = ctx.getResponse();
+        response.sendFile(path_1.join(__dirname, '../../public/', 'index.html'));
+    }
 };
-UserController = __decorate([
-    common_1.Controller('user')
-], UserController);
-exports.UserController = UserController;
-//# sourceMappingURL=user.controller.js.map
+NotFoundExceptionFilter = __decorate([
+    common_1.Catch(common_1.NotFoundException)
+], NotFoundExceptionFilter);
+exports.NotFoundExceptionFilter = NotFoundExceptionFilter;
+//# sourceMappingURL=file.filter.js.map

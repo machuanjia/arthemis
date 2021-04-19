@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:00:46
- * @LastEditTime: 2021-04-16 15:37:10
+ * @LastEditTime: 2021-04-19 17:30:58
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/app.controller.ts
  * @Description:
@@ -17,6 +17,7 @@ export class AppController {
 
   @Get()
   getHello(@Res() res: Response) {
+    console.log('======================');
     res.sendFile(join(__dirname, '../public/', 'index.html'));
   }
 }
