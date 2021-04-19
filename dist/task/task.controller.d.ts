@@ -4,7 +4,7 @@ import { Request } from 'express';
 export declare class TaskController {
     private readonly taskService;
     constructor(taskService: TaskService);
-    createTask(req: Request, dto: Task): Promise<Task>;
+    createTask(req: Request, dto: Task, user: any): Promise<Task>;
     getTaskDetail(req: Request, _id: string): Promise<Task>;
     sortTask(req: Request, _id: string, info: {
         fromId: string;

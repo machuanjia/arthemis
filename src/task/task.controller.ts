@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:22:57
- * @LastEditTime: 2021-04-15 16:44:20
+ * @LastEditTime: 2021-04-19 19:17:51
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.controller.ts
  * @Description:
@@ -16,17 +16,26 @@ import {
   Put,
   Delete,
   Query,
+  UseGuards,
 } from '@nestjs/common';
 import { Task } from './task.entity';
 import { TaskService } from './task.service';
 import { Request } from 'express';
+import { CurrentUser } from 'src/auth/current-user.decorator';
+import { AuthGuard } from '@nestjs/passport';
 
 @Controller('tasks')
 export class TaskController {
   constructor(private readonly taskService: TaskService) {}
 
+  @UseGuards(AuthGuard('jwt'))
   @Post()
-  async createTask(@Req() req: Request, @Body() dto: Task): Promise<Task> {
+  async createTask(
+    @Req() req: Request,
+    @Body() dto: Task,
+    @CurrentUser() user,
+  ): Promise<Task> {
+    dto.user = user._id;
     return this.taskService.createTask({
       ...dto,
       tomato: 0,
@@ -40,7 +49,6 @@ export class TaskController {
   ): Promise<Task> {
     return this.taskService.getTaskDetail(_id);
   }
-
   @Post(':_id/sort')
   async sortTask(
     @Req() req: Request,

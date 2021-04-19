@@ -49,6 +49,10 @@ __decorate([
     typegoose_1.prop({ required: true }),
     __metadata("design:type", String)
 ], TaskSchema.prototype, "group", void 0);
+__decorate([
+    typegoose_1.prop({ ref: 'UserSchema' }),
+    __metadata("design:type", Object)
+], TaskSchema.prototype, "user", void 0);
 TaskSchema = __decorate([
     typegoose_1.modelOptions({
         schemaOptions: {

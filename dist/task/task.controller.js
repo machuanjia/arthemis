@@ -15,11 +15,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TaskController = void 0;
 const common_1 = require("@nestjs/common");
 const task_service_1 = require("./task.service");
+const current_user_decorator_1 = require("../auth/current-user.decorator");
+const passport_1 = require("@nestjs/passport");
 let TaskController = class TaskController {
     constructor(taskService) {
         this.taskService = taskService;
     }
-    async createTask(req, dto) {
+    async createTask(req, dto, user) {
+        dto.user = user._id;
         return this.taskService.createTask(Object.assign(Object.assign({}, dto), { tomato: 0 }));
     }
     async getTaskDetail(req, _id) {
@@ -39,10 +42,13 @@ let TaskController = class TaskController {
     }
 };
 __decorate([
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
     common_1.Post(),
-    __param(0, common_1.Req()), __param(1, common_1.Body()),
+    __param(0, common_1.Req()),
+    __param(1, common_1.Body()),
+    __param(2, current_user_decorator_1.CurrentUser()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:paramtypes", [Object, Object, Object]),
     __metadata("design:returntype", Promise)
 ], TaskController.prototype, "createTask", null);
 __decorate([

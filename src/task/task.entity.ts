@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:33:09
- * @LastEditTime: 2021-04-14 19:20:19
+ * @LastEditTime: 2021-04-19 19:11:37
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.entity.ts
  * @Description:
@@ -28,4 +28,6 @@ export interface Task {
   accountId?: string;
 
   staffId?: string;
+
+  user?: any;
 }

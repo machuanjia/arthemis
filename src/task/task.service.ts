@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:23:55
- * @LastEditTime: 2021-04-19 14:04:31
+ * @LastEditTime: 2021-04-19 19:19:41
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.service.ts
  * @Description:
@@ -37,7 +37,7 @@ export class TaskService {
   }
 
   async getTaskDetail(_id: string): Promise<Task> {
-    return await this.taskModel.findById(_id);
+    return await this.taskModel.findById(_id).populate('user');
   }
 
   async sortTask(
@@ -84,7 +84,7 @@ export class TaskService {
 
   async updateTask(_id: string, dto: Task): Promise<Task> {
     await this.taskModel.findOneAndUpdate({ _id }, dto);
-    return await this.taskModel.findById(_id);
+    return await this.taskModel.findById(_id).populate('user');
   }
 
   async deleteTask(_id: string): Promise<boolean> {
@@ -121,7 +121,7 @@ export class TaskService {
         state,
       }));
 
-    return await this.taskModel.find(options);
+    return await this.taskModel.find(options).populate('user');
   }
   async updateTaskSummary(summary: { content: string; dateNumber: number }) {
     const sum = await this.taskSummaryModel.find({

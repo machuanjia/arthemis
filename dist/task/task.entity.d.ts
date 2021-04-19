@@ -10,4 +10,5 @@ export interface Task {
     created_at?: number;
     accountId?: string;
     staffId?: string;
+    user?: any;
 }

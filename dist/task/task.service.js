@@ -100,7 +100,7 @@ let TaskService = class TaskService {
             (options = Object.assign({}, options, {
                 state,
             }));
-        return await this.taskModel.find(options);
+        return await this.taskModel.find(options).populate('user');
     }
     async updateTaskSummary(summary) {
         const sum = await this.taskSummaryModel.find({

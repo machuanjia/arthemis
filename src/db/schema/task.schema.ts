@@ -1,13 +1,14 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 11:48:18
- * @LastEditTime: 2021-04-15 10:49:39
+ * @LastEditTime: 2021-04-19 19:10:48
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/db/schema/task.schema.ts
  * @Description:
  */
-import { prop, modelOptions } from '@typegoose/typegoose';
+import { prop, modelOptions, Ref } from '@typegoose/typegoose';
 import { IsNumber, IsString } from 'class-validator';
+import { UserSchema } from './user.schema';
 
 @modelOptions({
   schemaOptions: {
@@ -42,6 +43,9 @@ export class TaskSchema {
   @IsString()
   @prop({ required: true })
   group: string;
+
+  @prop({ ref: 'UserSchema' })
+  user: Ref<UserSchema>;
 
   //   @prop()
   //   accountId: string;
