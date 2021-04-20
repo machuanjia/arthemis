@@ -31,7 +31,7 @@ __decorate([
 ], ProjectSchema.prototype, "state", void 0);
 __decorate([
     class_validator_1.IsNumber(),
-    typegoose_1.prop({ required: true }),
+    typegoose_1.prop(),
     __metadata("design:type", Number)
 ], ProjectSchema.prototype, "position", void 0);
 __decorate([

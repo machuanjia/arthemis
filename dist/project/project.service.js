@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProjectService = void 0;
 const common_1 = require("@nestjs/common");
 const nestjs_typegoose_1 = require("nestjs-typegoose");
+const constant_1 = require("../constant");
 const project_schema_1 = require("../db/schema/project.schema");
 let ProjectService = class ProjectService {
     constructor(projectModel) {
@@ -24,8 +25,40 @@ let ProjectService = class ProjectService {
     async createProject(dao) {
         return await this.projectModel.create(dao);
     }
+    async getProjectDetail(_id) {
+        return await this.projectModel.findById(_id);
+    }
     async updateProject(_id, dao) {
         await this.projectModel.findByIdAndUpdate(_id, dao);
+    }
+    async deleteProject(_id) {
+        await this.projectModel.findByIdAndDelete(_id);
+        return true;
+    }
+    async getProjects(keyword, pi, ps) {
+        const findOptions = {};
+        let regexp = '';
+        const pageIndex = parseInt(pi || 0);
+        const pageSize = parseInt(ps || constant_1.PAGINATION.SIZE);
+        if (keyword) {
+            regexp = new RegExp(keyword, 'i');
+            findOptions.$and = [{ name: { $regex: regexp } }];
+        }
+        const total = await this.projectModel
+            .find(findOptions)
+            .skip(pageIndex * pageSize)
+            .limit(pageSize)
+            .count();
+        const users = await this.projectModel
+            .find(findOptions)
+            .skip(pageIndex * pageSize)
+            .limit(pageSize)
+            .sort({ _id: -1 });
+        return {
+            page: pageIndex,
+            total: total,
+            data: users,
+        };
     }
 };
 ProjectService = __decorate([

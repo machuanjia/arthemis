@@ -2377,7 +2377,7 @@
         "affectsGlobalScope": false
       },
       "../src/db/schema/project.schema.ts": {
-        "version": "2b46142216bfc0a39fdcae3e2262792e9c06a864441d304feda411973358d82b",
+        "version": "95d6028f827721842b0574bda958fb84df0ff803c11e582cf46a6ac195d24603",
         "signature": "59f97363674fe8f0c6abe5ff61b74250255870fb3a14d9f73311b58665804de1",
         "affectsGlobalScope": false
       },
@@ -3011,19 +3011,19 @@
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
-      "../src/project/project.controller.ts": {
-        "version": "9fe827c55e7c18077e96a3660d4e08cedab693ae4e5c4c822f4c02ad16498b76",
-        "signature": "92aab257b3bbd953e40909ee12d67918e550c407d7e45c6de840ae8facc7b441",
-        "affectsGlobalScope": false
-      },
       "../src/project/project.entity.ts": {
         "version": "26c124a8d47bb658123898cdc70eb5c61086a29de06908445e97dc4c81c58908",
         "signature": "be912d825b1114688112c8e0af58db19198ed14fcf51bbd3d9daa6b47be4600c",
         "affectsGlobalScope": false
       },
       "../src/project/project.service.ts": {
-        "version": "a3e3f59aa8a9b8e13baa0ce09c3a9b6129d5e4efacd19f2700796cca8f9d8914",
-        "signature": "fa61e071655fba0408304c7241b8d9793e2894d8a4d0c52411651cb7274c0971",
+        "version": "6a33da9f0680d8089a9095766e4a7e65e471e2343cd959443907a89fe625376e",
+        "signature": "d6e2c813ea5e2e2a85dbb729d0a89426e55ac8c09833ece7f200ae3addd27ed5",
+        "affectsGlobalScope": false
+      },
+      "../src/project/project.controller.ts": {
+        "version": "6c44817a635ec7728abf464d33106e3210a164d5222520cf5882f46173f50558",
+        "signature": "f7ac21f575e96bb721eee634a37d7aac6a1fa5973c225766bbdb8b8ad773546d",
         "affectsGlobalScope": false
       },
       "../src/project/project.module.ts": {
@@ -7721,8 +7721,11 @@
       ],
       "../src/project/project.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/mongoose/index.d.ts"
+        "../node_modules/mongoose/index.d.ts",
+        "../src/project/project.entity.ts",
+        "../src/project/project.service.ts"
       ],
       "../src/project/project.entity.ts": [
         "../node_modules/@types/mongoose/index.d.ts",
@@ -7741,6 +7744,7 @@
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
         "../node_modules/nestjs-typegoose/dist/index.d.ts",
+        "../src/constant/index.ts",
         "../src/db/schema/project.schema.ts",
         "../src/project/project.entity.ts"
       ],
@@ -11927,6 +11931,13 @@
       ],
       "../src/middleware/file.filter.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/project/project.controller.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../node_modules/@types/express/index.d.ts",
+        "../src/db/schema/project.schema.ts",
+        "../src/project/project.entity.ts",
+        "../src/project/project.service.ts"
       ],
       "../src/project/project.service.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
