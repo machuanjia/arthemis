@@ -103,10 +103,10 @@ let TaskService = class TaskService {
         return await this.taskModel.find(options).populate('user');
     }
     async updateTaskSummary(summary) {
-        const sum = await this.taskSummaryModel.find({
+        const sum = await this.taskSummaryModel.findOne({
             dateNumber: summary.dateNumber,
         });
-        if (sum && sum.length > 0) {
+        if (sum) {
             await this.taskSummaryModel.findByIdAndUpdate(sum._id, {
                 content: summary.content,
             });

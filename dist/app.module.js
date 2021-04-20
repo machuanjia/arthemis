@@ -16,6 +16,7 @@ const db_module_1 = require("./db/db.module");
 const res_interceptor_1 = require("./core/res.interceptor");
 const user_module_1 = require("./user/user.module");
 const auth_module_1 = require("./auth/auth.module");
+const project_module_1 = require("./project/project.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -28,6 +29,7 @@ AppModule = __decorate([
             task_module_1.TaskModule,
             user_module_1.UserModule,
             auth_module_1.AuthModule,
+            project_module_1.ProjectModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService, res_interceptor_1.ResponseInterceptor],

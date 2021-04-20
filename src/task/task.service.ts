@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:23:55
- * @LastEditTime: 2021-04-19 19:19:41
+ * @LastEditTime: 2021-04-20 15:22:13
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.service.ts
  * @Description:
@@ -124,10 +124,10 @@ export class TaskService {
     return await this.taskModel.find(options).populate('user');
   }
   async updateTaskSummary(summary: { content: string; dateNumber: number }) {
-    const sum = await this.taskSummaryModel.find({
+    const sum = await this.taskSummaryModel.findOne({
       dateNumber: summary.dateNumber,
     });
-    if (sum && sum.length > 0) {
+    if (sum) {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       await this.taskSummaryModel.findByIdAndUpdate(sum._id, {

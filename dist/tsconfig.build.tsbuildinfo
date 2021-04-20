@@ -2227,7 +2227,7 @@
         "affectsGlobalScope": false
       },
       "../src/task/task.service.ts": {
-        "version": "394e0238b30c0083405511d81726c9e1794576aaa2a1ed2b408d1c3ca4530459",
+        "version": "7b2e667341bbc5c52ed7cab67a0fa435f91c0b965a3f03b83f748be68fea03d8",
         "signature": "d02b50cddf077a9b12b1a83a6d9f9922186203b828ed9b2bd8fdb18719e423d9",
         "affectsGlobalScope": false
       },
@@ -2376,8 +2376,13 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
+      "../src/db/schema/project.schema.ts": {
+        "version": "2b46142216bfc0a39fdcae3e2262792e9c06a864441d304feda411973358d82b",
+        "signature": "59f97363674fe8f0c6abe5ff61b74250255870fb3a14d9f73311b58665804de1",
+        "affectsGlobalScope": false
+      },
       "../src/db/db.module.ts": {
-        "version": "866d63ea24d880e32b48651f6c66e3f050ebd30d226d4ea2d06f946e8d185e72",
+        "version": "309848a90b97651e72bd1998aa82717c063ef17af13fb7d36a8833950b203c8b",
         "signature": "99618673a337d72adab8f797bda545d4b51eb728eae68233ab6ff01c075de1c3",
         "affectsGlobalScope": false
       },
@@ -3006,8 +3011,28 @@
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
+      "../src/project/project.controller.ts": {
+        "version": "9fe827c55e7c18077e96a3660d4e08cedab693ae4e5c4c822f4c02ad16498b76",
+        "signature": "92aab257b3bbd953e40909ee12d67918e550c407d7e45c6de840ae8facc7b441",
+        "affectsGlobalScope": false
+      },
+      "../src/project/project.entity.ts": {
+        "version": "26c124a8d47bb658123898cdc70eb5c61086a29de06908445e97dc4c81c58908",
+        "signature": "be912d825b1114688112c8e0af58db19198ed14fcf51bbd3d9daa6b47be4600c",
+        "affectsGlobalScope": false
+      },
+      "../src/project/project.service.ts": {
+        "version": "a3e3f59aa8a9b8e13baa0ce09c3a9b6129d5e4efacd19f2700796cca8f9d8914",
+        "signature": "fa61e071655fba0408304c7241b8d9793e2894d8a4d0c52411651cb7274c0971",
+        "affectsGlobalScope": false
+      },
+      "../src/project/project.module.ts": {
+        "version": "6eb8eec81e555bbc937c9befd327dc331e0cf1493a3a0c157ca6a54caf7e8638",
+        "signature": "45c6b2036288a6f306c0884c5f0ed5ea8dc9560af06d46f5bfbe0f5d6fec39b3",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "6b4f583d2f99fa3b51112e4a26a5d2c45978f3de1e6a0779bb0b831a41ec6bca",
+        "version": "e33165bc7c0bcf5f68e02d0a5229ac104fee6527aa64b7d46c08bd313c25404a",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -7569,6 +7594,7 @@
         "../src/auth/auth.module.ts",
         "../src/core/res.interceptor.ts",
         "../src/db/db.module.ts",
+        "../src/project/project.module.ts",
         "../src/task/task.module.ts",
         "../src/user/user.module.ts"
       ],
@@ -7645,8 +7671,16 @@
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
         "../node_modules/nestjs-typegoose/dist/index.d.ts",
+        "../src/db/schema/project.schema.ts",
         "../src/db/schema/task.schema.ts",
         "../src/db/schema/tomato.summary.schema.ts",
+        "../src/db/schema/user.schema.ts"
+      ],
+      "../src/db/schema/project.schema.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/class-validator/types/index.d.ts",
+        "../node_modules/mongoose/index.d.ts",
         "../src/db/schema/user.schema.ts"
       ],
       "../src/db/schema/task.schema.ts": [
@@ -7684,6 +7718,31 @@
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@types/node/path.d.ts",
         "../node_modules/mongoose/index.d.ts"
+      ],
+      "../src/project/project.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../src/project/project.entity.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../src/project/project.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts",
+        "../src/project/project.controller.ts",
+        "../src/project/project.service.ts"
+      ],
+      "../src/project/project.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts",
+        "../node_modules/nestjs-typegoose/dist/index.d.ts",
+        "../src/db/schema/project.schema.ts",
+        "../src/project/project.entity.ts"
       ],
       "../src/task/task.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -11858,12 +11917,21 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/rxjs/index.d.ts"
       ],
+      "../src/db/schema/project.schema.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../src/db/schema/user.schema.ts"
+      ],
       "../src/db/schema/task.schema.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../src/db/schema/user.schema.ts"
       ],
       "../src/middleware/file.filter.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/project/project.service.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../src/db/schema/project.schema.ts",
+        "../src/project/project.entity.ts"
       ],
       "../src/task/task.controller.ts": [
         "../node_modules/@types/express/index.d.ts",

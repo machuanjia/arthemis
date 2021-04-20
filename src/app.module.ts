@@ -15,6 +15,7 @@ import { DbModule } from './db/db.module';
 import { ResponseInterceptor } from './core/res.interceptor';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
+import { ProjectModule } from './project/project.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { AuthModule } from './auth/auth.module';
     TaskModule,
     UserModule,
     AuthModule,
+    ProjectModule,
   ],
   controllers: [AppController],
   providers: [AppService, ResponseInterceptor],
