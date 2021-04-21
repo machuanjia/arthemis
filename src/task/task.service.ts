@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:23:55
- * @LastEditTime: 2021-04-21 16:35:30
+ * @LastEditTime: 2021-04-21 17:02:47
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.service.ts
  * @Description:
@@ -37,7 +37,14 @@ export class TaskService {
   }
 
   async getTaskDetail(_id: string): Promise<Task> {
-    return await this.taskModel.findById(_id).populate('user');
+    return await this.taskModel.findById(_id).populate([
+      {
+        path: 'charger',
+      },
+      {
+        path: 'user',
+      },
+    ]);
   }
 
   async sortTask(
@@ -84,7 +91,14 @@ export class TaskService {
 
   async updateTask(_id: string, dto: Task): Promise<Task> {
     await this.taskModel.findOneAndUpdate({ _id }, dto);
-    return await this.taskModel.findById(_id).populate('user');
+    return await this.taskModel.findById(_id).populate([
+      {
+        path: 'charger',
+      },
+      {
+        path: 'user',
+      },
+    ]);
   }
 
   async deleteTask(_id: string): Promise<boolean> {
