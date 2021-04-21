@@ -62,6 +62,10 @@ __decorate([
 __decorate([
     typegoose_1.prop({ ref: 'UserSchema' }),
     __metadata("design:type", Object)
+], TaskSchema.prototype, "charger", void 0);
+__decorate([
+    typegoose_1.prop({ ref: 'UserSchema' }),
+    __metadata("design:type", Object)
 ], TaskSchema.prototype, "user", void 0);
 __decorate([
     typegoose_1.prop({ ref: 'ScrumSchema' }),

@@ -2227,8 +2227,8 @@
         "affectsGlobalScope": false
       },
       "../src/db/schema/task.schema.ts": {
-        "version": "6c0f744c833224ab9fcc2f4603c0229e7d5eec22a99d5c4204cdc5acad834d03",
-        "signature": "69b4db43ca3f63f5156ff589a4bed2d190083cbef2c036fa84334876591a757f",
+        "version": "d6ba0882f5158b66b73f894ba582ce0d088f6ec0b33990b9c123982ad97fc422",
+        "signature": "2dbbcc917c2126c9f7afb85af4852d1ec7ab9f96a81d7ef373eb071eb1a28bee",
         "affectsGlobalScope": false
       },
       "../src/db/schema/tomato.summary.schema.ts": {
@@ -2237,7 +2237,7 @@
         "affectsGlobalScope": false
       },
       "../src/task/task.service.ts": {
-        "version": "a6c4459b679775877e165d54001aedfa7d63497e3f783a5ea3e5912dd33296c7",
+        "version": "74ac156f6e6074c4d34cff322b74b476bebdd5d9f174a5a3ac21d6707db68c23",
         "signature": "dc82ccd2066e61f7795c899edab6eef0b7650a99874931b65be6bc92fdf5c0dd",
         "affectsGlobalScope": false
       },

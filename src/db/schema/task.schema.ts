@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 11:48:18
- * @LastEditTime: 2021-04-21 10:36:08
+ * @LastEditTime: 2021-04-21 16:25:33
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/db/schema/task.schema.ts
  * @Description:
@@ -53,6 +53,9 @@ export class TaskSchema {
   @IsString()
   @prop({ required: true })
   group: string;
+
+  @prop({ ref: 'UserSchema' })
+  charger: Ref<UserSchema>;
 
   @prop({ ref: 'UserSchema' })
   user: Ref<UserSchema>;

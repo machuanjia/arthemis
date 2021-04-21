@@ -104,7 +104,14 @@ let TaskService = class TaskService {
             (options = Object.assign({}, options, {
                 scrum,
             }));
-        return await this.taskModel.find(options).populate('user');
+        return await this.taskModel.find(options).populate([
+            {
+                path: 'charger',
+            },
+            {
+                path: 'user',
+            },
+        ]);
     }
     async updateTaskSummary(summary) {
         const sum = await this.taskSummaryModel.findOne({

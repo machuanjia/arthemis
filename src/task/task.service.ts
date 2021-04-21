@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:23:55
- * @LastEditTime: 2021-04-21 09:46:21
+ * @LastEditTime: 2021-04-21 16:35:30
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.service.ts
  * @Description:
@@ -127,7 +127,14 @@ export class TaskService {
         scrum,
       }));
 
-    return await this.taskModel.find(options).populate('user');
+    return await this.taskModel.find(options).populate([
+      {
+        path: 'charger',
+      },
+      {
+        path: 'user',
+      },
+    ]);
   }
   async updateTaskSummary(summary: { content: string; dateNumber: number }) {
     const sum = await this.taskSummaryModel.findOne({

@@ -12,6 +12,7 @@ export declare class TaskSchema {
     tomato: number;
     position: number;
     group: string;
+    charger: Ref<UserSchema>;
     user: Ref<UserSchema>;
     scrum: Ref<ScrumSchema>;
     project: Ref<ProjectSchema>;
