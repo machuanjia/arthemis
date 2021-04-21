@@ -14,5 +14,5 @@ export declare class TaskController {
     }): Promise<boolean>;
     updateTask(req: Request, _id: string, dto: Task): Promise<Task>;
     deleteTask(req: Request, _id: string): Promise<boolean>;
-    getTasks(req: Request, start: number, end: number, important: number, urgent: number, state: number): Promise<Task[]>;
+    getTasks(req: Request, start: number, end: number, important: number, urgent: number, state: number, scrum: string): Promise<Task[]>;
 }

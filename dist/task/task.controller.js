@@ -39,8 +39,8 @@ let TaskController = class TaskController {
     async deleteTask(req, _id) {
         return this.taskService.deleteTask(_id);
     }
-    async getTasks(req, start, end, important, urgent, state) {
-        return this.taskService.getTasks(start, end, important, urgent, state);
+    async getTasks(req, start, end, important, urgent, state, scrum) {
+        return this.taskService.getTasks(start, end, important, urgent, state, scrum);
     }
 };
 __decorate([
@@ -95,8 +95,9 @@ __decorate([
     __param(3, common_1.Query('important')),
     __param(4, common_1.Query('urgent')),
     __param(5, common_1.Query('state')),
+    __param(6, common_1.Query('scrum')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Number, Number, Number, Number, Number]),
+    __metadata("design:paramtypes", [Object, Number, Number, Number, Number, Number, String]),
     __metadata("design:returntype", Promise)
 ], TaskController.prototype, "getTasks", null);
 TaskController = __decorate([

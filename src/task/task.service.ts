@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:23:55
- * @LastEditTime: 2021-04-20 15:22:13
+ * @LastEditTime: 2021-04-21 09:46:21
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.service.ts
  * @Description:
@@ -98,6 +98,7 @@ export class TaskService {
     important: number,
     urgent: number,
     state: number,
+    scrum: string,
   ): Promise<Task[]> {
     let options = {};
     if (start && end) {
@@ -119,6 +120,11 @@ export class TaskService {
     state != undefined &&
       (options = Object.assign({}, options, {
         state,
+      }));
+
+    scrum &&
+      (options = Object.assign({}, options, {
+        scrum,
       }));
 
     return await this.taskModel.find(options).populate('user');

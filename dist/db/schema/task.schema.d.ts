@@ -1,7 +1,10 @@
 import { Ref } from '@typegoose/typegoose';
+import { ProjectSchema } from './project.schema';
 import { UserSchema } from './user.schema';
+import { ScrumSchema } from './scrum.schema';
 export declare class TaskSchema {
     name: string;
+    description: string;
     type: number;
     state: number;
     important: number;
@@ -10,4 +13,6 @@ export declare class TaskSchema {
     position: number;
     group: string;
     user: Ref<UserSchema>;
+    scrum: Ref<ScrumSchema>;
+    project: Ref<ProjectSchema>;
 }

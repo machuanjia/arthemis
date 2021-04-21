@@ -78,7 +78,7 @@ let TaskService = class TaskService {
         await this.taskModel.findByIdAndDelete(_id);
         return true;
     }
-    async getTasks(start, end, important, urgent, state) {
+    async getTasks(start, end, important, urgent, state, scrum) {
         let options = {};
         if (start && end) {
             options = {
@@ -99,6 +99,10 @@ let TaskService = class TaskService {
         state != undefined &&
             (options = Object.assign({}, options, {
                 state,
+            }));
+        scrum &&
+            (options = Object.assign({}, options, {
+                scrum,
             }));
         return await this.taskModel.find(options).populate('user');
     }

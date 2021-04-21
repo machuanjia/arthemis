@@ -10,12 +10,14 @@ exports.ProjectModule = void 0;
 const common_1 = require("@nestjs/common");
 const project_controller_1 = require("./project.controller");
 const project_service_1 = require("./project.service");
+const scrum_controller_1 = require("./scrum.controller");
+const scrum_service_1 = require("./scrum.service");
 let ProjectModule = class ProjectModule {
 };
 ProjectModule = __decorate([
     common_1.Module({
-        controllers: [project_controller_1.ProjectController],
-        providers: [project_service_1.ProjectService],
+        controllers: [project_controller_1.ProjectController, scrum_controller_1.ScrumController],
+        providers: [project_service_1.ProjectService, scrum_service_1.ScrumService],
     })
 ], ProjectModule);
 exports.ProjectModule = ProjectModule;

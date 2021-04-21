@@ -20,6 +20,11 @@ __decorate([
     __metadata("design:type", String)
 ], TaskSchema.prototype, "name", void 0);
 __decorate([
+    class_validator_1.IsString(),
+    typegoose_1.prop(),
+    __metadata("design:type", String)
+], TaskSchema.prototype, "description", void 0);
+__decorate([
     class_validator_1.IsNumber(),
     typegoose_1.prop(),
     __metadata("design:type", Number)
@@ -58,6 +63,14 @@ __decorate([
     typegoose_1.prop({ ref: 'UserSchema' }),
     __metadata("design:type", Object)
 ], TaskSchema.prototype, "user", void 0);
+__decorate([
+    typegoose_1.prop({ ref: 'ScrumSchema' }),
+    __metadata("design:type", Object)
+], TaskSchema.prototype, "scrum", void 0);
+__decorate([
+    typegoose_1.prop({ ref: 'ProjectSchema' }),
+    __metadata("design:type", Object)
+], TaskSchema.prototype, "project", void 0);
 TaskSchema = __decorate([
     typegoose_1.modelOptions({
         schemaOptions: {

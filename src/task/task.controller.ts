@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:22:57
- * @LastEditTime: 2021-04-19 19:24:52
+ * @LastEditTime: 2021-04-21 09:45:47
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.controller.ts
  * @Description:
@@ -86,7 +86,15 @@ export class TaskController {
     @Query('important') important: number,
     @Query('urgent') urgent: number,
     @Query('state') state: number,
+    @Query('scrum') scrum: string,
   ): Promise<Task[]> {
-    return this.taskService.getTasks(start, end, important, urgent, state);
+    return this.taskService.getTasks(
+      start,
+      end,
+      important,
+      urgent,
+      state,
+      scrum,
+    );
   }
 }

@@ -1457,8 +1457,8 @@
         "affectsGlobalScope": false
       },
       "../src/task/task.entity.ts": {
-        "version": "e60392d64c65173373b08902ea9393779e31353431d06513fccacf397671be04",
-        "signature": "88ef92a37014ddb04d0127296ac6055ce22d62adc1fd9c787c452b9c6da83ae5",
+        "version": "0e677de7c0a895dbdbe9a4785b80e89bc08c9d9ee36b36b00f1d064ea0a79040",
+        "signature": "60cbe293ac80fe20a2b33b1e05e018d9bff1c400ea8a615b11c393fb24946fee",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/bson/index.d.ts": {
@@ -2216,9 +2216,19 @@
         "signature": "55b9ce1098ddcaf0bc84aa15fba279ccbc5c553c4efef5c7e9365f3479c14d57",
         "affectsGlobalScope": false
       },
+      "../src/db/schema/project.schema.ts": {
+        "version": "95d6028f827721842b0574bda958fb84df0ff803c11e582cf46a6ac195d24603",
+        "signature": "59f97363674fe8f0c6abe5ff61b74250255870fb3a14d9f73311b58665804de1",
+        "affectsGlobalScope": false
+      },
+      "../src/db/schema/scrum.schema.ts": {
+        "version": "8f21d133d1779b29042e21a87ff5a72440bba4e88d91535771c9f369e995cb02",
+        "signature": "3b684a215103700052422ee3d477c365f66a88f02268ac3f93a46c74fd1a081c",
+        "affectsGlobalScope": false
+      },
       "../src/db/schema/task.schema.ts": {
-        "version": "a6ba7312f59eeee80511d7c17a58cba8ea4460afb634b69d07b84a14d525b85c",
-        "signature": "be94eebbf65a9fc2d76960b4bf647bd505abef3d2e9c1f5ce52497899e70d55b",
+        "version": "6c0f744c833224ab9fcc2f4603c0229e7d5eec22a99d5c4204cdc5acad834d03",
+        "signature": "69b4db43ca3f63f5156ff589a4bed2d190083cbef2c036fa84334876591a757f",
         "affectsGlobalScope": false
       },
       "../src/db/schema/tomato.summary.schema.ts": {
@@ -2227,8 +2237,8 @@
         "affectsGlobalScope": false
       },
       "../src/task/task.service.ts": {
-        "version": "7b2e667341bbc5c52ed7cab67a0fa435f91c0b965a3f03b83f748be68fea03d8",
-        "signature": "d02b50cddf077a9b12b1a83a6d9f9922186203b828ed9b2bd8fdb18719e423d9",
+        "version": "a6c4459b679775877e165d54001aedfa7d63497e3f783a5ea3e5912dd33296c7",
+        "signature": "dc82ccd2066e61f7795c899edab6eef0b7650a99874931b65be6bc92fdf5c0dd",
         "affectsGlobalScope": false
       },
       "../src/auth/current-user.decorator.ts": {
@@ -2292,13 +2302,13 @@
         "affectsGlobalScope": false
       },
       "../src/constant/index.ts": {
-        "version": "33043afe67341f868da4916db531449b883dce3a41880b1f9d9891276cce94bf",
-        "signature": "bc5259d78177996ddc2b210d4819d0068d1d5bf4a6cb65e0d8871eba56387b6a",
+        "version": "e26fc85d9577f95c868c9b952273991bedcb84f9e86743403d69d3cf75d41fc4",
+        "signature": "0aa9b00c9583815c716af33c7827a81f894247384616877e5633a82d3fe605cb",
         "affectsGlobalScope": false
       },
       "../src/task/task.controller.ts": {
-        "version": "241cdd08867fc311826661b5ea11b093b05f1d92d8a506d6717cf75737830233",
-        "signature": "e5c38e0386b7f2f1a9de8639bcdc9b314c19d32220f296ae3d72d0288b095e71",
+        "version": "5673920924bb35f11471d675f288d230546d011b235d07973064957ebd685bb3",
+        "signature": "5f00f35a2626dfc38b5b8182a81a663e5c69d41e4b842838ec93a7c06831d9bb",
         "affectsGlobalScope": false
       },
       "../src/task/task.summary.controller.ts": {
@@ -2376,13 +2386,8 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/db/schema/project.schema.ts": {
-        "version": "95d6028f827721842b0574bda958fb84df0ff803c11e582cf46a6ac195d24603",
-        "signature": "59f97363674fe8f0c6abe5ff61b74250255870fb3a14d9f73311b58665804de1",
-        "affectsGlobalScope": false
-      },
       "../src/db/db.module.ts": {
-        "version": "309848a90b97651e72bd1998aa82717c063ef17af13fb7d36a8833950b203c8b",
+        "version": "00761f15769ad3064b79900f787cf02663690d2d441a917320f233a440cf4390",
         "signature": "99618673a337d72adab8f797bda545d4b51eb728eae68233ab6ff01c075de1c3",
         "affectsGlobalScope": false
       },
@@ -3022,12 +3027,27 @@
         "affectsGlobalScope": false
       },
       "../src/project/project.controller.ts": {
-        "version": "6c44817a635ec7728abf464d33106e3210a164d5222520cf5882f46173f50558",
+        "version": "3510368b19457e34dbad6565608d2a4776d27fa650566f91d4638bf44c0a1086",
         "signature": "f7ac21f575e96bb721eee634a37d7aac6a1fa5973c225766bbdb8b8ad773546d",
         "affectsGlobalScope": false
       },
+      "../src/project/scrum.entity.ts": {
+        "version": "46660218f54fbcb44b3949ecfbdcee0d0bed695c740d0f5c925aac97819a20db",
+        "signature": "2fbfeb05d00b03fee6c2da6c5df06b1c4e2c49ef8676ad391e821959b59005d6",
+        "affectsGlobalScope": false
+      },
+      "../src/project/scrum.service.ts": {
+        "version": "59bc441acd6dc4a8bea4521a2a53f838b0d1dc518ae0fe68f3b871f2c684fc31",
+        "signature": "908e747bbf230e0d308bf445e3c9084a09483cf96b2887a551bb42999c7800f7",
+        "affectsGlobalScope": false
+      },
+      "../src/project/scrum.controller.ts": {
+        "version": "93db2bf47407107fdcfa406fa932df248979a04869191293b9b74b172dfe3249",
+        "signature": "e3230bb2125a5b938c575a10fd3490f3ed5ef59373d084d5281b0ed0377cee7c",
+        "affectsGlobalScope": false
+      },
       "../src/project/project.module.ts": {
-        "version": "6eb8eec81e555bbc937c9befd327dc331e0cf1493a3a0c157ca6a54caf7e8638",
+        "version": "eee5eac92b04e4ba4cede76f4cadc37a967f4aea279cb5dc51d3996b18b49c34",
         "signature": "45c6b2036288a6f306c0884c5f0ed5ea8dc9560af06d46f5bfbe0f5d6fec39b3",
         "affectsGlobalScope": false
       },
@@ -7672,6 +7692,7 @@
         "../node_modules/mongoose/index.d.ts",
         "../node_modules/nestjs-typegoose/dist/index.d.ts",
         "../src/db/schema/project.schema.ts",
+        "../src/db/schema/scrum.schema.ts",
         "../src/db/schema/task.schema.ts",
         "../src/db/schema/tomato.summary.schema.ts",
         "../src/db/schema/user.schema.ts"
@@ -7683,11 +7704,21 @@
         "../node_modules/mongoose/index.d.ts",
         "../src/db/schema/user.schema.ts"
       ],
+      "../src/db/schema/scrum.schema.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/class-validator/types/index.d.ts",
+        "../node_modules/mongoose/index.d.ts",
+        "../src/db/schema/project.schema.ts",
+        "../src/db/schema/user.schema.ts"
+      ],
       "../src/db/schema/task.schema.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
+        "../src/db/schema/project.schema.ts",
+        "../src/db/schema/scrum.schema.ts",
         "../src/db/schema/user.schema.ts"
       ],
       "../src/db/schema/tomato.summary.schema.ts": [
@@ -7736,7 +7767,9 @@
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
         "../src/project/project.controller.ts",
-        "../src/project/project.service.ts"
+        "../src/project/project.service.ts",
+        "../src/project/scrum.controller.ts",
+        "../src/project/scrum.service.ts"
       ],
       "../src/project/project.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7747,6 +7780,27 @@
         "../src/constant/index.ts",
         "../src/db/schema/project.schema.ts",
         "../src/project/project.entity.ts"
+      ],
+      "../src/project/scrum.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts",
+        "../src/project/scrum.entity.ts",
+        "../src/project/scrum.service.ts"
+      ],
+      "../src/project/scrum.entity.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../src/project/scrum.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts",
+        "../node_modules/nestjs-typegoose/dist/index.d.ts",
+        "../src/db/schema/scrum.schema.ts",
+        "../src/project/scrum.entity.ts"
       ],
       "../src/task/task.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -11925,8 +11979,15 @@
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../src/db/schema/user.schema.ts"
       ],
+      "../src/db/schema/scrum.schema.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../src/db/schema/project.schema.ts",
+        "../src/db/schema/user.schema.ts"
+      ],
       "../src/db/schema/task.schema.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../src/db/schema/project.schema.ts",
+        "../src/db/schema/scrum.schema.ts",
         "../src/db/schema/user.schema.ts"
       ],
       "../src/middleware/file.filter.ts": [
@@ -11943,6 +12004,18 @@
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../src/db/schema/project.schema.ts",
         "../src/project/project.entity.ts"
+      ],
+      "../src/project/scrum.controller.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../node_modules/@types/express/index.d.ts",
+        "../src/db/schema/scrum.schema.ts",
+        "../src/project/scrum.entity.ts",
+        "../src/project/scrum.service.ts"
+      ],
+      "../src/project/scrum.service.ts": [
+        "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../src/db/schema/scrum.schema.ts",
+        "../src/project/scrum.entity.ts"
       ],
       "../src/task/task.controller.ts": [
         "../node_modules/@types/express/index.d.ts",

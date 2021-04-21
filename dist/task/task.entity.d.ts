@@ -1,6 +1,7 @@
 export interface Task {
     _id?: string;
     name?: string;
+    description?: string;
     type?: number;
     state?: number;
     important?: number;
@@ -12,4 +13,6 @@ export interface Task {
     accountId?: string;
     staffId?: string;
     user?: any;
+    project?: any;
+    scrum?: any;
 }

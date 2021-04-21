@@ -17,7 +17,7 @@ export declare class TaskService {
     }): Promise<boolean>;
     updateTask(_id: string, dto: Task): Promise<Task>;
     deleteTask(_id: string): Promise<boolean>;
-    getTasks(start: number, end: number, important: number, urgent: number, state: number): Promise<Task[]>;
+    getTasks(start: number, end: number, important: number, urgent: number, state: number, scrum: string): Promise<Task[]>;
     updateTaskSummary(summary: {
         content: string;
         dateNumber: number;
