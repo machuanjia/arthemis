@@ -2222,8 +2222,8 @@
         "affectsGlobalScope": false
       },
       "../src/db/schema/scrum.schema.ts": {
-        "version": "8f21d133d1779b29042e21a87ff5a72440bba4e88d91535771c9f369e995cb02",
-        "signature": "3b684a215103700052422ee3d477c365f66a88f02268ac3f93a46c74fd1a081c",
+        "version": "8e13f8b52245db0bbc1351958f77b912770259c77628769d6ef3f1700f57fa07",
+        "signature": "3ce5e11936f7532dba774917b793c65d495570c08b64b2cc127001dee2461a18",
         "affectsGlobalScope": false
       },
       "../src/db/schema/task.schema.ts": {
@@ -3032,12 +3032,12 @@
         "affectsGlobalScope": false
       },
       "../src/project/scrum.entity.ts": {
-        "version": "46660218f54fbcb44b3949ecfbdcee0d0bed695c740d0f5c925aac97819a20db",
-        "signature": "2fbfeb05d00b03fee6c2da6c5df06b1c4e2c49ef8676ad391e821959b59005d6",
+        "version": "065f2da1067f22e7749ae8c64b8f68a9a7570cff16276076ca45439256043e53",
+        "signature": "3565993252b643630df3ff6c1c6de891d2e9c002e527367143a78e5c394d14a8",
         "affectsGlobalScope": false
       },
       "../src/project/scrum.service.ts": {
-        "version": "59bc441acd6dc4a8bea4521a2a53f838b0d1dc518ae0fe68f3b871f2c684fc31",
+        "version": "4302d372c3f19f4f29897f76939abfa04eba3380024e058ef4c335d4907835b2",
         "signature": "908e747bbf230e0d308bf445e3c9084a09483cf96b2887a551bb42999c7800f7",
         "affectsGlobalScope": false
       },
@@ -7791,6 +7791,7 @@
       ],
       "../src/project/scrum.entity.ts": [
         "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/passport-local/index.d.ts",
         "../node_modules/mongoose/index.d.ts"
       ],
       "../src/project/scrum.service.ts": [
@@ -11981,6 +11982,7 @@
       ],
       "../src/db/schema/scrum.schema.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../node_modules/mongoose/index.d.ts",
         "../src/db/schema/project.schema.ts",
         "../src/db/schema/user.schema.ts"
       ],

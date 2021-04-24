@@ -8,4 +8,13 @@ export interface Scrum {
     created_at?: number;
     user?: any;
     project?: any;
+    score?: number;
+    scoreList?: any;
+    participants?: any;
+    excellent?: any;
+    start?: number;
+    end?: number;
+    timeline?: any;
+    check?: any;
+    act?: any;
 }

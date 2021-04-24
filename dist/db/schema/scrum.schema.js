@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ScrumSchema = void 0;
 const typegoose_1 = require("@typegoose/typegoose");
 const class_validator_1 = require("class-validator");
+const mongoose_1 = require("mongoose");
 let ScrumSchema = class ScrumSchema {
 };
 __decorate([
@@ -41,6 +42,43 @@ __decorate([
     typegoose_1.prop({ ref: 'ProjectSchema', required: true }),
     __metadata("design:type", Object)
 ], ScrumSchema.prototype, "project", void 0);
+__decorate([
+    class_validator_1.IsNumber(),
+    typegoose_1.prop(),
+    __metadata("design:type", Number)
+], ScrumSchema.prototype, "score", void 0);
+__decorate([
+    typegoose_1.prop(),
+    __metadata("design:type", mongoose_1.Schema.Types.Mixed)
+], ScrumSchema.prototype, "scoreList", void 0);
+__decorate([
+    typegoose_1.prop({ ref: 'UserSchema' }),
+    __metadata("design:type", Array)
+], ScrumSchema.prototype, "participants", void 0);
+__decorate([
+    typegoose_1.prop({ ref: 'UserSchema' }),
+    __metadata("design:type", Object)
+], ScrumSchema.prototype, "excellent", void 0);
+__decorate([
+    typegoose_1.prop(),
+    __metadata("design:type", Number)
+], ScrumSchema.prototype, "start", void 0);
+__decorate([
+    typegoose_1.prop(),
+    __metadata("design:type", Number)
+], ScrumSchema.prototype, "end", void 0);
+__decorate([
+    typegoose_1.prop(),
+    __metadata("design:type", mongoose_1.Schema.Types.Mixed)
+], ScrumSchema.prototype, "timeline", void 0);
+__decorate([
+    typegoose_1.prop(),
+    __metadata("design:type", mongoose_1.Schema.Types.Mixed)
+], ScrumSchema.prototype, "check", void 0);
+__decorate([
+    typegoose_1.prop(),
+    __metadata("design:type", mongoose_1.Schema.Types.Mixed)
+], ScrumSchema.prototype, "act", void 0);
 ScrumSchema = __decorate([
     typegoose_1.modelOptions({
         schemaOptions: {

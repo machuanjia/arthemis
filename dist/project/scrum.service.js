@@ -17,6 +17,7 @@ const common_1 = require("@nestjs/common");
 const typegoose_1 = require("@typegoose/typegoose");
 const nestjs_typegoose_1 = require("nestjs-typegoose");
 const scrum_schema_1 = require("../db/schema/scrum.schema");
+const lodash_1 = require("lodash");
 let ScrumService = class ScrumService {
     constructor(scrumModel) {
         this.scrumModel = scrumModel;
@@ -70,6 +71,22 @@ let ScrumService = class ScrumService {
         return await this.scrumModel.findById(_id);
     }
     async updateScrum(_id, dao) {
+        if (dao.scoreList) {
+            const scrum = await this.scrumModel.findById(_id);
+            if (scrum && scrum.scoreList) {
+                const scoreList = [];
+                lodash_1.map(dao.scoreList, (ds) => {
+                    const es = lodash_1.find(scrum.scoreList, { _id: ds._id });
+                    if (es) {
+                        es.score = ds.score;
+                    }
+                    else {
+                        scoreList.push(ds);
+                    }
+                });
+                dao.scoreList = [...scoreList, ...scrum.scoreList];
+            }
+        }
         await this.scrumModel.findByIdAndUpdate(_id, dao);
         return await this.scrumModel.findById(_id);
     }

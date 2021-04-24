@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-20 16:15:57
- * @LastEditTime: 2021-04-21 09:15:04
+ * @LastEditTime: 2021-04-24 11:15:22
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/project/scrum.service.ts
  * @Description:
@@ -11,6 +11,7 @@ import { mongoose, ReturnModelType } from '@typegoose/typegoose';
 import { InjectModel } from 'nestjs-typegoose';
 import { ScrumSchema } from 'src/db/schema/scrum.schema';
 import { Scrum } from './scrum.entity';
+import { map, find, concat } from 'lodash';
 
 @Injectable()
 export class ScrumService {
@@ -71,6 +72,23 @@ export class ScrumService {
   }
 
   async updateScrum(_id: string, dao: Scrum) {
+    if (dao.scoreList) {
+      const scrum = await this.scrumModel.findById(_id);
+      if (scrum && scrum.scoreList) {
+        const scoreList = [];
+        map(dao.scoreList, (ds) => {
+          const es = find(scrum.scoreList, { _id: ds._id });
+          if (es) {
+            es.score = ds.score;
+          } else {
+            scoreList.push(ds);
+          }
+        });
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        dao.scoreList = [...scoreList, ...scrum.scoreList];
+      }
+    }
     await this.scrumModel.findByIdAndUpdate(_id, dao);
     return await this.scrumModel.findById(_id);
   }
