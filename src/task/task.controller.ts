@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:22:57
- * @LastEditTime: 2021-04-29 10:05:26
+ * @LastEditTime: 2021-04-29 15:47:27
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.controller.ts
  * @Description:
@@ -24,15 +24,16 @@ import { Request } from 'express';
 import { CurrentUser } from 'src/auth/current-user.decorator';
 import { AuthGuard } from '@nestjs/passport';
 import { TASK_TYPES } from 'src/constant';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 
 @Controller('tasks')
 @ApiTags('任务')
 export class TaskController {
   constructor(private readonly taskService: TaskService) {}
 
-  @UseGuards(AuthGuard('jwt'))
   @Post()
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async createTask(
     @Req() req: Request,
     @Body() dto: Task,
@@ -47,6 +48,8 @@ export class TaskController {
   }
 
   @Get(':_id')
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async getTaskDetail(
     @Req() req: Request,
     @Param('_id') _id: string,
@@ -54,6 +57,8 @@ export class TaskController {
     return this.taskService.getTaskDetail(_id);
   }
   @Post(':_id/sort')
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async sortTask(
     @Req() req: Request,
     @Param('_id') _id: string,
@@ -64,6 +69,8 @@ export class TaskController {
   }
 
   @Put(':_id')
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async updateTask(
     @Req() req: Request,
     @Param('_id') _id: string,
@@ -73,6 +80,8 @@ export class TaskController {
   }
 
   @Delete(':_id')
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async deleteTask(
     @Req() req: Request,
     @Param('_id') _id: string,
@@ -81,6 +90,8 @@ export class TaskController {
   }
 
   @Get()
+  @UseGuards(AuthGuard('jwt'))
+  @ApiBearerAuth()
   async getTasks(
     @Req() req: Request,
     @Query('start') start: number,
