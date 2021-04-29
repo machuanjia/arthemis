@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-20 14:11:22
- * @LastEditTime: 2021-04-20 16:08:55
+ * @LastEditTime: 2021-04-29 10:49:30
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/project/project.service.ts
  * @Description:
@@ -11,7 +11,7 @@ import { ReturnModelType } from '@typegoose/typegoose';
 import { InjectModel } from 'nestjs-typegoose';
 import { PAGINATION } from 'src/constant';
 import { ProjectSchema } from 'src/db/schema/project.schema';
-import { Project } from './project.entity';
+import { Project } from '../dao/project.entity';
 
 @Injectable()
 export class ProjectService {

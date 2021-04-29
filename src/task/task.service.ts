@@ -10,7 +10,7 @@ import { Injectable } from '@nestjs/common';
 import { ReturnModelType } from '@typegoose/typegoose';
 import { InjectModel } from 'nestjs-typegoose';
 import { TaskSchema } from '../db/schema/task.schema';
-import { Task } from './task.entity';
+import { Task } from '../dao/task.entity';
 import { maxBy } from 'lodash';
 import { TomatoSummarySchema } from 'src/db/schema/tomato.summary.schema';
 

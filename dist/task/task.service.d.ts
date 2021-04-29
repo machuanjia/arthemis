@@ -1,6 +1,6 @@
 import { ReturnModelType } from '@typegoose/typegoose';
 import { TaskSchema } from '../db/schema/task.schema';
-import { Task } from './task.entity';
+import { Task } from '../dao/task.entity';
 import { TomatoSummarySchema } from 'src/db/schema/tomato.summary.schema';
 export declare class TaskService {
     private readonly taskModel;

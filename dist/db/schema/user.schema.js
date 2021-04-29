@@ -13,11 +13,13 @@ exports.UserSchema = void 0;
 const typegoose_1 = require("@typegoose/typegoose");
 const class_validator_1 = require("class-validator");
 const bcryptjs_1 = require("bcryptjs");
+const swagger_1 = require("@nestjs/swagger");
 let UserSchema = class UserSchema {
 };
 __decorate([
     class_validator_1.IsString(),
     typegoose_1.prop({ required: true }),
+    swagger_1.ApiProperty({ description: '用户名', example: 'user1' }),
     __metadata("design:type", String)
 ], UserSchema.prototype, "username", void 0);
 __decorate([
@@ -31,6 +33,7 @@ __decorate([
             return val ? bcryptjs_1.hashSync(val) : val;
         },
     }),
+    swagger_1.ApiProperty({ description: '密码', example: '123456' }),
     __metadata("design:type", String)
 ], UserSchema.prototype, "password", void 0);
 UserSchema = __decorate([

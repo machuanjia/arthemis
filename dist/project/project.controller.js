@@ -14,6 +14,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProjectController = void 0;
 const common_1 = require("@nestjs/common");
+const swagger_1 = require("@nestjs/swagger");
+const project_entity_1 = require("../dao/project.entity");
 const project_service_1 = require("./project.service");
 let ProjectController = class ProjectController {
     constructor(projectService) {
@@ -39,7 +41,7 @@ __decorate([
     common_1.Post(),
     __param(0, common_1.Req()), __param(1, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:paramtypes", [Object, project_entity_1.Project]),
     __metadata("design:returntype", Promise)
 ], ProjectController.prototype, "createUser", null);
 __decorate([
@@ -55,7 +57,7 @@ __decorate([
     __param(1, common_1.Param('_id')),
     __param(2, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, String, Object]),
+    __metadata("design:paramtypes", [Object, String, project_entity_1.Project]),
     __metadata("design:returntype", Promise)
 ], ProjectController.prototype, "updateUser", null);
 __decorate([
@@ -77,6 +79,7 @@ __decorate([
 ], ProjectController.prototype, "getUsers", null);
 ProjectController = __decorate([
     common_1.Controller('projects'),
+    swagger_1.ApiTags('项目'),
     __metadata("design:paramtypes", [project_service_1.ProjectService])
 ], ProjectController);
 exports.ProjectController = ProjectController;

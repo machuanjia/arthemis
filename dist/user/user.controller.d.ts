@@ -1,5 +1,5 @@
 import { Request } from 'express';
-import { User } from './user.entity';
+import { User } from '../dao/user.entity';
 import { UserService } from './user.service';
 export declare class UserController {
     private readonly userService;

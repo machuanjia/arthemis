@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:22:57
- * @LastEditTime: 2021-04-21 09:45:47
+ * @LastEditTime: 2021-04-29 10:05:26
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.controller.ts
  * @Description:
@@ -18,14 +18,16 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import { Task } from './task.entity';
+import { Task } from '../dao/task.entity';
 import { TaskService } from './task.service';
 import { Request } from 'express';
 import { CurrentUser } from 'src/auth/current-user.decorator';
 import { AuthGuard } from '@nestjs/passport';
 import { TASK_TYPES } from 'src/constant';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('tasks')
+@ApiTags('任务')
 export class TaskController {
   constructor(private readonly taskService: TaskService) {}
 

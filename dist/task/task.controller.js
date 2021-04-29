@@ -14,10 +14,12 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TaskController = void 0;
 const common_1 = require("@nestjs/common");
+const task_entity_1 = require("../dao/task.entity");
 const task_service_1 = require("./task.service");
 const current_user_decorator_1 = require("../auth/current-user.decorator");
 const passport_1 = require("@nestjs/passport");
 const constant_1 = require("../constant");
+const swagger_1 = require("@nestjs/swagger");
 let TaskController = class TaskController {
     constructor(taskService) {
         this.taskService = taskService;
@@ -50,7 +52,7 @@ __decorate([
     __param(1, common_1.Body()),
     __param(2, current_user_decorator_1.CurrentUser()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object, Object]),
+    __metadata("design:paramtypes", [Object, task_entity_1.Task, Object]),
     __metadata("design:returntype", Promise)
 ], TaskController.prototype, "createTask", null);
 __decorate([
@@ -76,7 +78,7 @@ __decorate([
     __param(1, common_1.Param('_id')),
     __param(2, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, String, Object]),
+    __metadata("design:paramtypes", [Object, String, task_entity_1.Task]),
     __metadata("design:returntype", Promise)
 ], TaskController.prototype, "updateTask", null);
 __decorate([
@@ -102,6 +104,7 @@ __decorate([
 ], TaskController.prototype, "getTasks", null);
 TaskController = __decorate([
     common_1.Controller('tasks'),
+    swagger_1.ApiTags('任务'),
     __metadata("design:paramtypes", [task_service_1.TaskService])
 ], TaskController);
 exports.TaskController = TaskController;

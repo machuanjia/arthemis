@@ -14,6 +14,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ScrumController = void 0;
 const common_1 = require("@nestjs/common");
+const swagger_1 = require("@nestjs/swagger");
 const scrum_service_1 = require("./scrum.service");
 let ScrumController = class ScrumController {
     constructor(scrumService) {
@@ -62,6 +63,7 @@ __decorate([
 ], ScrumController.prototype, "deleteScrum", null);
 ScrumController = __decorate([
     common_1.Controller('scrums'),
+    swagger_1.ApiTags('Scrum'),
     __metadata("design:paramtypes", [scrum_service_1.ScrumService])
 ], ScrumController);
 exports.ScrumController = ScrumController;

@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:22:57
- * @LastEditTime: 2021-04-19 14:10:06
+ * @LastEditTime: 2021-04-29 10:06:42
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/task/task.summary.controller.ts
  * @Description:
@@ -17,11 +17,13 @@ import {
   Delete,
   Query,
 } from '@nestjs/common';
-import { Task } from './task.entity';
+import { Task } from '../dao/task.entity';
 import { TaskService } from './task.service';
 import { Request } from 'express';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('task-summary')
+@ApiTags('任务')
 export class TaskSummaryController {
   constructor(private readonly taskService: TaskService) {}
 

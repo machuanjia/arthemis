@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TaskSummaryController = void 0;
 const common_1 = require("@nestjs/common");
 const task_service_1 = require("./task.service");
+const swagger_1 = require("@nestjs/swagger");
 let TaskSummaryController = class TaskSummaryController {
     constructor(taskService) {
         this.taskService = taskService;
@@ -43,6 +44,7 @@ __decorate([
 ], TaskSummaryController.prototype, "getTomatoSummary", null);
 TaskSummaryController = __decorate([
     common_1.Controller('task-summary'),
+    swagger_1.ApiTags('任务'),
     __metadata("design:paramtypes", [task_service_1.TaskService])
 ], TaskSummaryController);
 exports.TaskSummaryController = TaskSummaryController;

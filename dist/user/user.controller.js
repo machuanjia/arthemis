@@ -14,6 +14,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserController = void 0;
 const common_1 = require("@nestjs/common");
+const swagger_1 = require("@nestjs/swagger");
+const user_entity_1 = require("../dao/user.entity");
 const user_service_1 = require("./user.service");
 let UserController = class UserController {
     constructor(userService) {
@@ -39,7 +41,7 @@ __decorate([
     common_1.Post(),
     __param(0, common_1.Req()), __param(1, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:paramtypes", [Object, user_entity_1.User]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "createUser", null);
 __decorate([
@@ -55,7 +57,7 @@ __decorate([
     __param(1, common_1.Param('_id')),
     __param(2, common_1.Body()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, String, Object]),
+    __metadata("design:paramtypes", [Object, String, user_entity_1.User]),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "updateUser", null);
 __decorate([
@@ -67,6 +69,24 @@ __decorate([
 ], UserController.prototype, "deleteUser", null);
 __decorate([
     common_1.Get(),
+    swagger_1.ApiQuery({
+        name: 'keyword',
+        type: String,
+        required: false,
+        description: '用户名',
+    }),
+    swagger_1.ApiQuery({
+        name: 'pi',
+        type: String,
+        required: false,
+        description: '第几页',
+    }),
+    swagger_1.ApiQuery({
+        name: 'ps',
+        type: String,
+        required: false,
+        description: '每页多少条',
+    }),
     __param(0, common_1.Req()),
     __param(1, common_1.Query('keyword')),
     __param(2, common_1.Query('pi')),
@@ -77,6 +97,7 @@ __decorate([
 ], UserController.prototype, "getUsers", null);
 UserController = __decorate([
     common_1.Controller('users'),
+    swagger_1.ApiTags('用户'),
     __metadata("design:paramtypes", [user_service_1.UserService])
 ], UserController);
 exports.UserController = UserController;

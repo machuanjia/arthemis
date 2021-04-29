@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-20 14:10:50
- * @LastEditTime: 2021-04-20 16:52:30
+ * @LastEditTime: 2021-04-29 10:05:47
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/project/project.controller.ts
  * @Description:
@@ -17,11 +17,13 @@ import {
   Req,
   Query,
 } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { Request } from 'express';
-import { Project } from './project.entity';
+import { Project } from '../dao/project.entity';
 import { ProjectService } from './project.service';
 
 @Controller('projects')
+@ApiTags('项目')
 export class ProjectController {
   constructor(private readonly projectService: ProjectService) {}
 

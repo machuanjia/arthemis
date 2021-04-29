@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-16 19:18:46
- * @LastEditTime: 2021-04-17 09:52:20
+ * @LastEditTime: 2021-04-29 11:00:27
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/user/user.controller.ts
  * @Description:
@@ -17,11 +17,13 @@ import {
   Query,
   Req,
 } from '@nestjs/common';
+import { ApiQuery, ApiTags } from '@nestjs/swagger';
 import { Request } from 'express';
-import { User } from './user.entity';
+import { User } from '../dao/user.entity';
 import { UserService } from './user.service';
 
 @Controller('users')
+@ApiTags('用户')
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
@@ -50,6 +52,24 @@ export class UserController {
   }
 
   @Get()
+  @ApiQuery({
+    name: 'keyword',
+    type: String,
+    required: false,
+    description: '用户名',
+  })
+  @ApiQuery({
+    name: 'pi',
+    type: String,
+    required: false,
+    description: '第几页',
+  })
+  @ApiQuery({
+    name: 'ps',
+    type: String,
+    required: false,
+    description: '每页多少条',
+  })
   async getUsers(
     @Req() req: Request,
     @Query('keyword') keyword: string,

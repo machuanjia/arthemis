@@ -1,6 +1,6 @@
 import { ReturnModelType } from '@typegoose/typegoose';
 import { UserSchema } from '../db/schema/user.schema';
-import { User } from './user.entity';
+import { User } from '../dao/user.entity';
 export declare class UserService {
     private readonly userModel;
     constructor(userModel: ReturnModelType<typeof UserSchema>);

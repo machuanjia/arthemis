@@ -1,5 +1,5 @@
 import { Request } from 'express';
-import { Project } from './project.entity';
+import { Project } from '../dao/project.entity';
 import { ProjectService } from './project.service';
 export declare class ProjectController {
     private readonly projectService;

@@ -1,4 +1,4 @@
-import { Task } from './task.entity';
+import { Task } from '../dao/task.entity';
 import { TaskService } from './task.service';
 import { Request } from 'express';
 export declare class TaskController {

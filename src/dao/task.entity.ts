@@ -1,30 +1,40 @@
+import { ApiProperty } from '@nestjs/swagger';
+
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:33:09
- * @LastEditTime: 2021-04-21 10:36:30
+ * @LastEditTime: 2021-04-29 10:51:21
  * @LastEditors: D.Y
- * @FilePath: /arthemis/src/task/task.entity.ts
+ * @FilePath: /arthemis/src/dao/task.entity.ts
  * @Description:
  */
-export interface Task {
+export class Task {
   _id?: string;
 
+  @ApiProperty()
   name?: string;
 
+  @ApiProperty()
   description?: string;
 
+  @ApiProperty()
   type?: number;
 
+  @ApiProperty()
   state?: number;
 
+  @ApiProperty()
   important?: number;
 
+  @ApiProperty()
   urgent?: number;
 
   tomato?: number;
 
+  @ApiProperty()
   group?: string;
 
+  @ApiProperty()
   position?: number;
 
   created_at?: number;
@@ -35,7 +45,9 @@ export interface Task {
 
   user?: any;
 
+  @ApiProperty()
   project?: any;
 
+  @ApiProperty()
   scrum?: any;
 }

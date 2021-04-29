@@ -9,17 +9,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = void 0;
+exports.Project = void 0;
 const swagger_1 = require("@nestjs/swagger");
-class User {
+class Project {
 }
 __decorate([
     swagger_1.ApiProperty(),
     __metadata("design:type", String)
-], User.prototype, "username", void 0);
+], Project.prototype, "name", void 0);
 __decorate([
     swagger_1.ApiProperty(),
     __metadata("design:type", String)
-], User.prototype, "password", void 0);
-exports.User = User;
-//# sourceMappingURL=user.entity.js.map
+], Project.prototype, "description", void 0);
+__decorate([
+    swagger_1.ApiProperty(),
+    __metadata("design:type", Number)
+], Project.prototype, "state", void 0);
+__decorate([
+    swagger_1.ApiProperty(),
+    __metadata("design:type", Number)
+], Project.prototype, "position", void 0);
+__decorate([
+    swagger_1.ApiProperty(),
+    __metadata("design:type", Number)
+], Project.prototype, "created_at", void 0);
+__decorate([
+    swagger_1.ApiProperty(),
+    __metadata("design:type", Object)
+], Project.prototype, "user", void 0);
+exports.Project = Project;
+//# sourceMappingURL=project.entity.js.map

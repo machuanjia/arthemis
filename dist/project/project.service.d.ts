@@ -1,6 +1,6 @@
 import { ReturnModelType } from '@typegoose/typegoose';
 import { ProjectSchema } from 'src/db/schema/project.schema';
-import { Project } from './project.entity';
+import { Project } from '../dao/project.entity';
 export declare class ProjectService {
     private readonly projectModel;
     private subPosition;

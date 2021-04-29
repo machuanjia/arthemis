@@ -19,6 +19,8 @@ const jwt_1 = require("@nestjs/jwt");
 const current_user_decorator_1 = require("./current-user.decorator");
 const nestjs_typegoose_1 = require("nestjs-typegoose");
 const user_schema_1 = require("../db/schema/user.schema");
+const swagger_1 = require("@nestjs/swagger");
+const user_entity_1 = require("../dao/user.entity");
 let AuthController = class AuthController {
     constructor(jwtService, userModel) {
         this.jwtService = jwtService;
@@ -35,15 +37,18 @@ let AuthController = class AuthController {
 };
 __decorate([
     common_1.Post('login'),
+    swagger_1.ApiOperation({ summary: '登录' }),
     common_1.UseGuards(passport_1.AuthGuard('local')),
     __param(0, common_1.Body()), __param(1, current_user_decorator_1.CurrentUser()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:paramtypes", [user_entity_1.User, Object]),
     __metadata("design:returntype", Promise)
 ], AuthController.prototype, "login", null);
 __decorate([
     common_1.Get('info'),
+    swagger_1.ApiOperation({ summary: '获取登录信息及token' }),
     common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, current_user_decorator_1.CurrentUser()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
@@ -51,6 +56,7 @@ __decorate([
 ], AuthController.prototype, "user", null);
 AuthController = __decorate([
     common_1.Controller('auth'),
+    swagger_1.ApiTags('Auth'),
     __param(1, nestjs_typegoose_1.InjectModel(user_schema_1.UserSchema)),
     __metadata("design:paramtypes", [jwt_1.JwtService, Object])
 ], AuthController);

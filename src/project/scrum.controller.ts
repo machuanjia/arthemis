@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-20 16:15:45
- * @LastEditTime: 2021-04-20 19:22:48
+ * @LastEditTime: 2021-04-29 10:05:54
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/project/scrum.controller.ts
  * @Description:
@@ -17,11 +17,13 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { Request } from 'express';
 import { Scrum } from './scrum.entity';
 import { ScrumService } from './scrum.service';
 
 @Controller('scrums')
+@ApiTags('Scrum')
 export class ScrumController {
   constructor(private readonly scrumService: ScrumService) {}
 

@@ -1452,13 +1452,198 @@
         "affectsGlobalScope": false
       },
       "../src/app.controller.ts": {
-        "version": "fe2a365f9a125b7f34b9978ab32859c7145954d570bac97aac6d273c729df197",
+        "version": "bc3b95e30f588cadc3d8d5165d52f306f1fc83ab89e74d12af2e3401d9601260",
         "signature": "2b393b33ebe5408601627aeefc31d11cfb2360be7949603775fed99f5291087e",
         "affectsGlobalScope": false
       },
-      "../src/task/task.entity.ts": {
-        "version": "0e677de7c0a895dbdbe9a4785b80e89bc08c9d9ee36b36b00f1d064ea0a79040",
-        "signature": "60cbe293ac80fe20a2b33b1e05e018d9bff1c400ea8a615b11c393fb24946fee",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-basic.decorator.d.ts": {
+        "version": "6ecc423e71318bafbd230e6059e082c377170dfc7e02fccfa600586f8604d452",
+        "signature": "6ecc423e71318bafbd230e6059e082c377170dfc7e02fccfa600586f8604d452",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts": {
+        "version": "772f9bdd2bf50c9c01b0506001545e9b878faa7394ad6e7d90b49b179a024584",
+        "signature": "772f9bdd2bf50c9c01b0506001545e9b878faa7394ad6e7d90b49b179a024584",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts": {
+        "version": "2a28ac2343b34a610a32beb5bd62953f95ee64b3656febc819bb70f5a85d15d6",
+        "signature": "2a28ac2343b34a610a32beb5bd62953f95ee64b3656febc819bb70f5a85d15d6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts": {
+        "version": "02dafa194c95b7c0293059512b8ea3bd95402c6e4bc8331dab7e92e842260c56",
+        "signature": "02dafa194c95b7c0293059512b8ea3bd95402c6e4bc8331dab7e92e842260c56",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-body.decorator.d.ts": {
+        "version": "10e0bec39a58664907f32d33b825155a4efea3e74e62bd57206bce35486891d6",
+        "signature": "10e0bec39a58664907f32d33b825155a4efea3e74e62bd57206bce35486891d6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts": {
+        "version": "cd1ccdd9fd7980d43dfede5d42ee3d18064baed98b136089cf7c8221d562f058",
+        "signature": "cd1ccdd9fd7980d43dfede5d42ee3d18064baed98b136089cf7c8221d562f058",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-cookie.decorator.d.ts": {
+        "version": "d60f9a4fd1e734e7b79517f02622426ea1000deb7d6549dfdece043353691a4e",
+        "signature": "d60f9a4fd1e734e7b79517f02622426ea1000deb7d6549dfdece043353691a4e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts": {
+        "version": "403d28b5e5f8fcff795ac038902033ec5890143e950af45bd91a3ed231e8b59c",
+        "signature": "403d28b5e5f8fcff795ac038902033ec5890143e950af45bd91a3ed231e8b59c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-extra-models.decorator.d.ts": {
+        "version": "999fa84c5df2d19909d68a43ce89a5dddfb30e526f7796ea995809a09f53e393",
+        "signature": "999fa84c5df2d19909d68a43ce89a5dddfb30e526f7796ea995809a09f53e393",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-header.decorator.d.ts": {
+        "version": "bfeb476eb0049185cb94c2bfcadb3ce1190554bbcf170d2bf7c68ed9bb00458e",
+        "signature": "bfeb476eb0049185cb94c2bfcadb3ce1190554bbcf170d2bf7c68ed9bb00458e",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-hide-property.decorator.d.ts": {
+        "version": "ae23a65a2b664ffe979b0a2a98842e10bdf3af67a356f14bbc9d77eb3ab13585",
+        "signature": "ae23a65a2b664ffe979b0a2a98842e10bdf3af67a356f14bbc9d77eb3ab13585",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts": {
+        "version": "eccf6ad2a8624329653896e8dbd03f30756cbd902a81b5d3942d6cf0e1a21575",
+        "signature": "eccf6ad2a8624329653896e8dbd03f30756cbd902a81b5d3942d6cf0e1a21575",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts": {
+        "version": "334ed2e25a7ebc8db8aac231bab5a5b57a1b6f8063186a92314f4ddf3d74d4e2",
+        "signature": "334ed2e25a7ebc8db8aac231bab5a5b57a1b6f8063186a92314f4ddf3d74d4e2",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-param.decorator.d.ts": {
+        "version": "5af015a9834e0f5cf56a9089ddf0ca87a56bd3f8ad0eb79c8cc95968aa867923",
+        "signature": "5af015a9834e0f5cf56a9089ddf0ca87a56bd3f8ad0eb79c8cc95968aa867923",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts": {
+        "version": "62463aa3d299ae0cdc5473d2ac32213a05753c3adce87a8801c6d2b114a64116",
+        "signature": "62463aa3d299ae0cdc5473d2ac32213a05753c3adce87a8801c6d2b114a64116",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/schema-object-metadata.interface.d.ts": {
+        "version": "c9c2eabaad71c534d7de16385977f95184fdf3ddd0339dadbd5d599488d94f90",
+        "signature": "c9c2eabaad71c534d7de16385977f95184fdf3ddd0339dadbd5d599488d94f90",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-property.decorator.d.ts": {
+        "version": "bdf0a372e233a8f5ab5daba2763ab8897e1044d735c1698a261b8e2ab08d8d13",
+        "signature": "bdf0a372e233a8f5ab5daba2763ab8897e1044d735c1698a261b8e2ab08d8d13",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-query.decorator.d.ts": {
+        "version": "9cca15b1c8c4fca29fc938964765d521690d320f1cc478ce3d907abef60b7711",
+        "signature": "9cca15b1c8c4fca29fc938964765d521690d320f1cc478ce3d907abef60b7711",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts": {
+        "version": "1205f9908206109effcfe3649bdac82907939bae2e3cb132f8f6236b587515ac",
+        "signature": "1205f9908206109effcfe3649bdac82907939bae2e3cb132f8f6236b587515ac",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-security.decorator.d.ts": {
+        "version": "f689c0633e8c95f550d36af943d775f3fae3dac81a28714b45c7af0bbb76a980",
+        "signature": "f689c0633e8c95f550d36af943d775f3fae3dac81a28714b45c7af0bbb76a980",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts": {
+        "version": "fef736cfb404b4db9aa942f377dbbac6edb76d18aabd3b647713fa75da8939e9",
+        "signature": "fef736cfb404b4db9aa942f377dbbac6edb76d18aabd3b647713fa75da8939e9",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/api-extension.decorator.d.ts": {
+        "version": "45659c92e49dfca4601acc7e57fbb03a71513c69768984baf86ead8d20387a01",
+        "signature": "45659c92e49dfca4601acc7e57fbb03a71513c69768984baf86ead8d20387a01",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts": {
+        "version": "44d8e9e3978043513ea75120312cee0705a65355fd1253dab6de966adc0409bc",
+        "signature": "44d8e9e3978043513ea75120312cee0705a65355fd1253dab6de966adc0409bc",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts": {
+        "version": "9a061acaccf9c582366f60dab2e276dbad29c80176d7e454278a96c8f65a0096",
+        "signature": "9a061acaccf9c582366f60dab2e276dbad29c80176d7e454278a96c8f65a0096",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts": {
+        "version": "17b5469df1d2c13496e90752122e1236d9ebd057fe5ff3b37f1e3b4613ea3969",
+        "signature": "17b5469df1d2c13496e90752122e1236d9ebd057fe5ff3b37f1e3b4613ea3969",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts": {
+        "version": "8fc97ef271771dc6f81a9c846d007ac4f0cb5779e3f441c1de54dfda5046fe7b",
+        "signature": "8fc97ef271771dc6f81a9c846d007ac4f0cb5779e3f441c1de54dfda5046fe7b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts": {
+        "version": "d9782352ee0b7743d8f9c65610bcb6d7f00744448b5892a275dba30c60e8f2ee",
+        "signature": "d9782352ee0b7743d8f9c65610bcb6d7f00744448b5892a275dba30c60e8f2ee",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts": {
+        "version": "b64fec482d5c612291eebd81e32993663ee90a5dc05cfe43464e6ef5ee1cae73",
+        "signature": "b64fec482d5c612291eebd81e32993663ee90a5dc05cfe43464e6ef5ee1cae73",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/type-helpers/intersection-type.helper.d.ts": {
+        "version": "2dd9d764938d20a0613b89b14d7da644f7be4a70d22f18c3019254029d7a7a3c",
+        "signature": "2dd9d764938d20a0613b89b14d7da644f7be4a70d22f18c3019254029d7a7a3c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/type-helpers/omit-type.helper.d.ts": {
+        "version": "021034a82ea821144b711eeba792f824f03d30b5cdb3b20a63e9bc5ad0531fdf",
+        "signature": "021034a82ea821144b711eeba792f824f03d30b5cdb3b20a63e9bc5ad0531fdf",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/type-helpers/partial-type.helper.d.ts": {
+        "version": "b251114717c08c462c1a8388155ded58cbdfbadc13488b775a4eaaa59863dc46",
+        "signature": "b251114717c08c462c1a8388155ded58cbdfbadc13488b775a4eaaa59863dc46",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/type-helpers/pick-type.helper.d.ts": {
+        "version": "a2e546426763a9d5d4b5b10b928fb312f8b76e581c8a985362cd04a01859e51a",
+        "signature": "a2e546426763a9d5d4b5b10b928fb312f8b76e581c8a985362cd04a01859e51a",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/type-helpers/index.d.ts": {
+        "version": "33bb0d96cea9782d701332e6b7390f8efae3af92fd3e2aa2ac45e4a610e705d6",
+        "signature": "33bb0d96cea9782d701332e6b7390f8efae3af92fd3e2aa2ac45e4a610e705d6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/utils/get-schema-path.util.d.ts": {
+        "version": "ae3e98448468e46474d817b5ebe74db11ab22c2feb60e292d96ce1a4ee963623",
+        "signature": "ae3e98448468e46474d817b5ebe74db11ab22c2feb60e292d96ce1a4ee963623",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/utils/index.d.ts": {
+        "version": "f0a2fdee9e801ac9320a8660dd6b8a930bf8c5b658d390ae0feafdba8b633688",
+        "signature": "f0a2fdee9e801ac9320a8660dd6b8a930bf8c5b658d390ae0feafdba8b633688",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/dist/index.d.ts": {
+        "version": "7beb7f04f6186bdac5e622d44e4cac38d9f2b9fcad984b10d3762e369524dd77",
+        "signature": "7beb7f04f6186bdac5e622d44e4cac38d9f2b9fcad984b10d3762e369524dd77",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/swagger/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "affectsGlobalScope": false
+      },
+      "../src/dao/task.entity.ts": {
+        "version": "0e5213ae11381f385d5139ce586fa02d4bfc2ad22c398e24d093ba15f5337609",
+        "signature": "db04c6de9467441b4cacd4a3faa19e44ee179075dcfec0cacb3778e0a9f71218",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/bson/index.d.ts": {
@@ -2212,7 +2397,7 @@
         "affectsGlobalScope": false
       },
       "../src/db/schema/user.schema.ts": {
-        "version": "c881fad51412dbee6b31500c955c70cdef319a2b89679cb2ac15b1328da9fad1",
+        "version": "857b76f512e8dfaac51359ad14e662b39f0c4f9ddf12fabcfee219094cf25dc1",
         "signature": "55b9ce1098ddcaf0bc84aa15fba279ccbc5c553c4efef5c7e9365f3479c14d57",
         "affectsGlobalScope": false
       },
@@ -2237,8 +2422,8 @@
         "affectsGlobalScope": false
       },
       "../src/task/task.service.ts": {
-        "version": "45d1a9e68db3a416906307a5bf5d35ddbb83e3960c717939de5843029af2343e",
-        "signature": "dc82ccd2066e61f7795c899edab6eef0b7650a99874931b65be6bc92fdf5c0dd",
+        "version": "7bf925d0eb813e2211f5004e912d6ea84fac78d737644d87e38314d65359d84a",
+        "signature": "e8193f0e3cbcb0f141970b0a756e522553d1b4a4c21ce6762b258823e6922bba",
         "affectsGlobalScope": false
       },
       "../src/auth/current-user.decorator.ts": {
@@ -2307,12 +2492,12 @@
         "affectsGlobalScope": false
       },
       "../src/task/task.controller.ts": {
-        "version": "5673920924bb35f11471d675f288d230546d011b235d07973064957ebd685bb3",
-        "signature": "5f00f35a2626dfc38b5b8182a81a663e5c69d41e4b842838ec93a7c06831d9bb",
+        "version": "d5c3d7a5083960339a073f51c437c0b4e6c53546093c65e15a14ea11dc381698",
+        "signature": "7e36d5f9cca3cd80c15997e676c1e19bff76cbbacc389672bbb47585165693a1",
         "affectsGlobalScope": false
       },
       "../src/task/task.summary.controller.ts": {
-        "version": "eeb5e685c22298833df5fbe90206ac0453d8af18dc4b8f2e4a4689a824ac20ea",
+        "version": "f59907552bf3ff6cd3c46ebfd9897bee60a7068d1fa839adcdaa81713ec9a79a",
         "signature": "e9255a51ae2ac0486cf8bb8fa42ab800f4661b0071937b75e5e1c7c515e06d5c",
         "affectsGlobalScope": false
       },
@@ -2912,23 +3097,23 @@
         "affectsGlobalScope": false
       },
       "../src/core/res.interceptor.ts": {
-        "version": "6b8bf35a99b42a11e0d9dfacce65e93190eb157dc7e2be8fa4a3364f149bfa3f",
+        "version": "fcfb68723ff4634d730dfaf7a2a4f78834332427f16ad0a8594341d7021777f6",
         "signature": "91819b65ce0874f3ab895ef54b3c4ade1123a1b5c6ceb8221ab5a86d489904bb",
         "affectsGlobalScope": false
       },
-      "../src/user/user.entity.ts": {
-        "version": "2d0d44f071e096f60887568a85b72f7608ae45d8a273fcad1433bf93057ddd11",
-        "signature": "80d36b940b0ee5d3718536471f21383780e88c5534d2d14862ab0a996d6ae910",
+      "../src/dao/user.entity.ts": {
+        "version": "9bed4d32748981f21516a9304dbe48ea9972a1198af895e4fbf2754838a27c23",
+        "signature": "a7847075f4ee8fddf527b733386358161deafe29e8e508f104f7cdf2370f985e",
         "affectsGlobalScope": false
       },
       "../src/user/user.service.ts": {
-        "version": "58b326f8af2c021e4494580517da024af741bc0ffee529361de950b3d6fa8636",
-        "signature": "3e85f8800c973510e33a416c64c78eee1c31ff5c47516fc644604800bbac7c4f",
+        "version": "05981d00485f522166aa8739be7eb9e6e9424522bf54d31cce4863e352b9a74d",
+        "signature": "104695bd4d4a7bee1a055b0f62a412645dd4c54bf2dc643b283d8c885a736c04",
         "affectsGlobalScope": false
       },
       "../src/user/user.controller.ts": {
-        "version": "df8d033a4f58141cd97833264060260aa1d973f75fb92fddfe6a86667938a43b",
-        "signature": "523d40ef61ff9e431937303caafabe74554d7d7503b9e76049848b6687cabedf",
+        "version": "45331bd28741f2e8f2435c59c280e54c1c0bca93d6144f777e771a40759b39ff",
+        "signature": "37997f94f4b2dc43da9f59a9703404f734424bf3b6d0048cd6e27d24b85a311f",
         "affectsGlobalScope": false
       },
       "../src/user/user.module.ts": {
@@ -2972,8 +3157,8 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.controller.ts": {
-        "version": "d0fda94a9b4ecbbdd232af2ca69e2c6bb199d0141c190c90c42fc7aedb75c66d",
-        "signature": "3cd93a542b3a83b1434f1a8ac5afc6e94c87d4449f3d8c6fe68de3a66cb2042d",
+        "version": "c1d3cad4c552ce2ce9e41012951dd2e2f96458c2ec3af6de88f544b0397c3b61",
+        "signature": "f65b6e7a0f3c7beaa4d15e72e88d0654ccb2b61b1613d11ee73978043991520b",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
@@ -3016,19 +3201,19 @@
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
-      "../src/project/project.entity.ts": {
-        "version": "26c124a8d47bb658123898cdc70eb5c61086a29de06908445e97dc4c81c58908",
-        "signature": "be912d825b1114688112c8e0af58db19198ed14fcf51bbd3d9daa6b47be4600c",
+      "../src/dao/project.entity.ts": {
+        "version": "729c99bcee34aafa4ede550b19d9110640c070c3901c97d5ba96402f6c9c1ef0",
+        "signature": "578bed579cc3cfa844e19a53cdf8fa04932543c6cde880bfd2138668f5f8486a",
         "affectsGlobalScope": false
       },
       "../src/project/project.service.ts": {
-        "version": "6a33da9f0680d8089a9095766e4a7e65e471e2343cd959443907a89fe625376e",
-        "signature": "d6e2c813ea5e2e2a85dbb729d0a89426e55ac8c09833ece7f200ae3addd27ed5",
+        "version": "40e660d1f2e4acd32e1ef98f84f713d6303a6ef96fd0929378868d72a86ed6a9",
+        "signature": "a18c0903aae8d5196820415e89b108d1d4d56cc91b1c530fb250d124fee4da1f",
         "affectsGlobalScope": false
       },
       "../src/project/project.controller.ts": {
-        "version": "3510368b19457e34dbad6565608d2a4776d27fa650566f91d4638bf44c0a1086",
-        "signature": "f7ac21f575e96bb721eee634a37d7aac6a1fa5973c225766bbdb8b8ad773546d",
+        "version": "eff1543adb872a410b72ee5ebcaf0d3f21cc57a2e16a870ade0afd3820408045",
+        "signature": "913fb9e4d6d7793d47082f9daac2aaded7f82fe0d65f5f04c582a78666796b31",
         "affectsGlobalScope": false
       },
       "../src/project/scrum.entity.ts": {
@@ -3042,7 +3227,7 @@
         "affectsGlobalScope": false
       },
       "../src/project/scrum.controller.ts": {
-        "version": "93db2bf47407107fdcfa406fa932df248979a04869191293b9b74b172dfe3249",
+        "version": "a7bcad04e7ac63d895327dbfd36d26430a5112bf86d73365e3c3ad27a946f522",
         "signature": "e3230bb2125a5b938c575a10fd3490f3ed5ef59373d084d5281b0ed0377cee7c",
         "affectsGlobalScope": false
       },
@@ -3322,7 +3507,7 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "5fdc0737434ce310c5424034bd1b4384ce53a519bab3671c2ebe1b90a7726d45",
+        "version": "49a5537b39327ef56626db4e91548a121500c3a9ce83475f1eea3436a505cfdd",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -4846,6 +5031,215 @@
       "../node_modules/@nestjs/platform-express/multer/multer.module.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/platform-express/multer/interfaces/files-upload-module.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-basic.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-body.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-cookie.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-extension.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-extra-models.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-header.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-hide-property.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-param.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-property.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/schema-object-metadata.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-query.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-security.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/decorators/api-basic.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-body.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-cookie.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-extension.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-extra-models.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-header.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-hide-property.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-param.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-property.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-query.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-security.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/document-builder.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
+        "../node_modules/@nestjs/swagger/dist/type-helpers/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/utils/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts",
+        "../node_modules/reflect-metadata/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/schema-object-metadata.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/type-helpers/intersection-type.helper.d.ts",
+        "../node_modules/@nestjs/swagger/dist/type-helpers/omit-type.helper.d.ts",
+        "../node_modules/@nestjs/swagger/dist/type-helpers/partial-type.helper.d.ts",
+        "../node_modules/@nestjs/swagger/dist/type-helpers/pick-type.helper.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/intersection-type.helper.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/omit-type.helper.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/partial-type.helper.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/pick-type.helper.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/utils/get-schema-path.util.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/utils/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/utils/get-schema-path.util.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts"
       ],
@@ -7627,11 +8021,13 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../node_modules/@nestjs/passport/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
         "../node_modules/nestjs-typegoose/dist/index.d.ts",
         "../src/auth/current-user.decorator.ts",
+        "../src/dao/user.entity.ts",
         "../src/db/schema/user.schema.ts"
       ],
       "../src/auth/auth.module.ts": [
@@ -7686,6 +8082,21 @@
         "../node_modules/rxjs/index.d.ts",
         "../node_modules/rxjs/operators/index.d.ts"
       ],
+      "../src/dao/project.entity.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../src/dao/task.entity.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../src/dao/user.entity.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
       "../src/db/db.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
@@ -7728,6 +8139,7 @@
         "../node_modules/mongoose/index.d.ts"
       ],
       "../src/db/schema/user.schema.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts",
@@ -7736,7 +8148,7 @@
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@nestjs/platform-express/index.d.ts",
-        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@types/node/path.d.ts",
         "../node_modules/mongoose/index.d.ts",
@@ -7752,15 +8164,12 @@
       ],
       "../src/project/project.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
-        "../src/project/project.entity.ts",
+        "../src/dao/project.entity.ts",
         "../src/project/project.service.ts"
-      ],
-      "../src/project/project.entity.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/mongoose/index.d.ts"
       ],
       "../src/project/project.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7778,11 +8187,12 @@
         "../node_modules/mongoose/index.d.ts",
         "../node_modules/nestjs-typegoose/dist/index.d.ts",
         "../src/constant/index.ts",
-        "../src/db/schema/project.schema.ts",
-        "../src/project/project.entity.ts"
+        "../src/dao/project.entity.ts",
+        "../src/db/schema/project.schema.ts"
       ],
       "../src/project/scrum.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
@@ -7806,17 +8216,14 @@
       "../src/task/task.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/passport/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
         "../src/auth/current-user.decorator.ts",
         "../src/constant/index.ts",
-        "../src/task/task.entity.ts",
+        "../src/dao/task.entity.ts",
         "../src/task/task.service.ts"
-      ],
-      "../src/task/task.entity.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/mongoose/index.d.ts"
       ],
       "../src/task/task.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7832,29 +8239,27 @@
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
         "../node_modules/nestjs-typegoose/dist/index.d.ts",
+        "../src/dao/task.entity.ts",
         "../src/db/schema/task.schema.ts",
-        "../src/db/schema/tomato.summary.schema.ts",
-        "../src/task/task.entity.ts"
+        "../src/db/schema/tomato.summary.schema.ts"
       ],
       "../src/task/task.summary.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
-        "../src/task/task.entity.ts",
+        "../src/dao/task.entity.ts",
         "../src/task/task.service.ts"
       ],
       "../src/user/user.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
         "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts",
-        "../src/user/user.entity.ts",
+        "../src/dao/user.entity.ts",
         "../src/user/user.service.ts"
-      ],
-      "../src/user/user.entity.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/mongoose/index.d.ts"
       ],
       "../src/user/user.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7870,8 +8275,8 @@
         "../node_modules/mongoose/index.d.ts",
         "../node_modules/nestjs-typegoose/dist/index.d.ts",
         "../src/constant/index.ts",
-        "../src/db/schema/user.schema.ts",
-        "../src/user/user.entity.ts"
+        "../src/dao/user.entity.ts",
+        "../src/db/schema/user.schema.ts"
       ]
     },
     "exportedModulesMap": {
@@ -9203,6 +9608,215 @@
       "../node_modules/@nestjs/platform-express/multer/multer.module.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/platform-express/multer/interfaces/files-upload-module.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-basic.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-body.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-cookie.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-extension.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-extra-models.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-header.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-hide-property.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-param.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-property.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/schema-object-metadata.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-query.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-security.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/decorators/api-basic.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-body.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-cookie.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-extension.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-extra-models.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-header.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-hide-property.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-param.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-property.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-query.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-security.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/document-builder.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
+        "../node_modules/@nestjs/swagger/dist/type-helpers/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/utils/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts",
+        "../node_modules/reflect-metadata/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/schema-object-metadata.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/open-api-spec.interface.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/type-helpers/intersection-type.helper.d.ts",
+        "../node_modules/@nestjs/swagger/dist/type-helpers/omit-type.helper.d.ts",
+        "../node_modules/@nestjs/swagger/dist/type-helpers/partial-type.helper.d.ts",
+        "../node_modules/@nestjs/swagger/dist/type-helpers/pick-type.helper.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/intersection-type.helper.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/omit-type.helper.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/partial-type.helper.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/type-helpers/pick-type.helper.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/utils/get-schema-path.util.d.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/utils/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/utils/get-schema-path.util.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/index.d.ts",
         "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/mongoose/index.d.ts"
       ],
@@ -11960,6 +12574,7 @@
       "../src/auth/auth.controller.ts": [
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../src/dao/user.entity.ts",
         "../src/db/schema/user.schema.ts"
       ],
       "../src/auth/jwt.strategy.ts": [
@@ -11998,14 +12613,14 @@
       "../src/project/project.controller.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../node_modules/@types/express/index.d.ts",
+        "../src/dao/project.entity.ts",
         "../src/db/schema/project.schema.ts",
-        "../src/project/project.entity.ts",
         "../src/project/project.service.ts"
       ],
       "../src/project/project.service.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
-        "../src/db/schema/project.schema.ts",
-        "../src/project/project.entity.ts"
+        "../src/dao/project.entity.ts",
+        "../src/db/schema/project.schema.ts"
       ],
       "../src/project/scrum.controller.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
@@ -12021,14 +12636,14 @@
       ],
       "../src/task/task.controller.ts": [
         "../node_modules/@types/express/index.d.ts",
-        "../src/task/task.entity.ts",
+        "../src/dao/task.entity.ts",
         "../src/task/task.service.ts"
       ],
       "../src/task/task.service.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
+        "../src/dao/task.entity.ts",
         "../src/db/schema/task.schema.ts",
-        "../src/db/schema/tomato.summary.schema.ts",
-        "../src/task/task.entity.ts"
+        "../src/db/schema/tomato.summary.schema.ts"
       ],
       "../src/task/task.summary.controller.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
@@ -12039,14 +12654,14 @@
       "../src/user/user.controller.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
         "../node_modules/@types/express/index.d.ts",
+        "../src/dao/user.entity.ts",
         "../src/db/schema/user.schema.ts",
-        "../src/user/user.entity.ts",
         "../src/user/user.service.ts"
       ],
       "../src/user/user.service.ts": [
         "../node_modules/@typegoose/typegoose/lib/typegoose.d.ts",
-        "../src/db/schema/user.schema.ts",
-        "../src/user/user.entity.ts"
+        "../src/dao/user.entity.ts",
+        "../src/db/schema/user.schema.ts"
       ]
     },
     "semanticDiagnosticsPerFile": []

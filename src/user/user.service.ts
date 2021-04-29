@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-16 19:19:42
- * @LastEditTime: 2021-04-17 11:29:37
+ * @LastEditTime: 2021-04-29 10:49:44
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/user/user.service.ts
  * @Description:
@@ -11,7 +11,7 @@ import { ReturnModelType } from '@typegoose/typegoose';
 import { InjectModel } from 'nestjs-typegoose';
 import { PAGINATION } from '../constant';
 import { UserSchema } from '../db/schema/user.schema';
-import { User } from './user.entity';
+import { User } from '../dao/user.entity';
 
 @Injectable()
 export class UserService {
