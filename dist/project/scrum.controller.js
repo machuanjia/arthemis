@@ -14,6 +14,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ScrumController = void 0;
 const common_1 = require("@nestjs/common");
+const passport_1 = require("@nestjs/passport");
 const swagger_1 = require("@nestjs/swagger");
 const scrum_service_1 = require("./scrum.service");
 let ScrumController = class ScrumController {
@@ -35,6 +36,8 @@ let ScrumController = class ScrumController {
 };
 __decorate([
     common_1.Post(),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Req()), __param(1, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
@@ -42,6 +45,8 @@ __decorate([
 ], ScrumController.prototype, "createScrum", null);
 __decorate([
     common_1.Get(),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Query('projectId')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
@@ -49,6 +54,8 @@ __decorate([
 ], ScrumController.prototype, "getScrumsByProjectId", null);
 __decorate([
     common_1.Put(':_id'),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Param()), __param(1, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, Object]),
@@ -56,6 +63,8 @@ __decorate([
 ], ScrumController.prototype, "updateScrum", null);
 __decorate([
     common_1.Delete(':_id'),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Param()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),

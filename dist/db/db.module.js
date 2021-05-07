@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DbModule = void 0;
 const common_1 = require("@nestjs/common");
 const nestjs_typegoose_1 = require("nestjs-typegoose");
+const graph_schema_1 = require("./schema/graph.schema");
 const project_schema_1 = require("./schema/project.schema");
 const scrum_schema_1 = require("./schema/scrum.schema");
 const task_schema_1 = require("./schema/task.schema");
@@ -20,6 +21,7 @@ const models = nestjs_typegoose_1.TypegooseModule.forFeature([
     user_schema_1.UserSchema,
     project_schema_1.ProjectSchema,
     scrum_schema_1.ScrumSchema,
+    graph_schema_1.GraphSchema,
 ]);
 let DbModule = class DbModule {
 };

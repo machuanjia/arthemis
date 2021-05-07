@@ -46,8 +46,9 @@ let TaskController = class TaskController {
     }
 };
 __decorate([
-    common_1.UseGuards(passport_1.AuthGuard('jwt')),
     common_1.Post(),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Req()),
     __param(1, common_1.Body()),
     __param(2, current_user_decorator_1.CurrentUser()),
@@ -57,6 +58,8 @@ __decorate([
 ], TaskController.prototype, "createTask", null);
 __decorate([
     common_1.Get(':_id'),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Req()),
     __param(1, common_1.Param('_id')),
     __metadata("design:type", Function),
@@ -65,6 +68,8 @@ __decorate([
 ], TaskController.prototype, "getTaskDetail", null);
 __decorate([
     common_1.Post(':_id/sort'),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Req()),
     __param(1, common_1.Param('_id')),
     __param(2, common_1.Body()),
@@ -74,6 +79,8 @@ __decorate([
 ], TaskController.prototype, "sortTask", null);
 __decorate([
     common_1.Put(':_id'),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Req()),
     __param(1, common_1.Param('_id')),
     __param(2, common_1.Body()),
@@ -83,6 +90,8 @@ __decorate([
 ], TaskController.prototype, "updateTask", null);
 __decorate([
     common_1.Delete(':_id'),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Req()),
     __param(1, common_1.Param('_id')),
     __metadata("design:type", Function),
@@ -91,6 +100,8 @@ __decorate([
 ], TaskController.prototype, "deleteTask", null);
 __decorate([
     common_1.Get(),
+    common_1.UseGuards(passport_1.AuthGuard('jwt')),
+    swagger_1.ApiBearerAuth(),
     __param(0, common_1.Req()),
     __param(1, common_1.Query('start')),
     __param(2, common_1.Query('end')),

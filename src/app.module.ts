@@ -1,7 +1,7 @@
 /*
  * @Author: D.Y
  * @Date: 2021-04-14 10:00:46
- * @LastEditTime: 2021-04-17 11:51:14
+ * @LastEditTime: 2021-05-06 16:24:28
  * @LastEditors: D.Y
  * @FilePath: /arthemis/src/app.module.ts
  * @Description:
@@ -16,6 +16,7 @@ import { ResponseInterceptor } from './core/res.interceptor';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { ProjectModule } from './project/project.module';
+import { GraphModule } from './graph/graph.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { ProjectModule } from './project/project.module';
     UserModule,
     AuthModule,
     ProjectModule,
+    GraphModule,
   ],
   controllers: [AppController],
   providers: [AppService, ResponseInterceptor],
