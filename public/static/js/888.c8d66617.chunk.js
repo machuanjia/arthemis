@@ -1,0 +1,2 @@
+(this["webpackJsonparthmis-client"]=this["webpackJsonparthmis-client"]||[]).push([[888],{1793:function(s,a){Prism.languages.t4=Prism.languages["t4-cs"]=Prism.languages["t4-templating"].createT4("csharp")}}]);
+//# sourceMappingURL=888.c8d66617.chunk.js.map

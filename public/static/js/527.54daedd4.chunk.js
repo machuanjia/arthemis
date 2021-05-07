@@ -1,2 +1,0 @@
-(this["webpackJsonparthmis-client"]=this["webpackJsonparthmis-client"]||[]).push([[527],{1418:function(t,e){Prism.languages.brainfuck={pointer:{pattern:/<|>/,alias:"keyword"},increment:{pattern:/\+/,alias:"inserted"},decrement:{pattern:/-/,alias:"deleted"},branching:{pattern:/\[|\]/,alias:"important"},operator:/[.,]/,comment:/\S+/}}}]);
-//# sourceMappingURL=527.54daedd4.chunk.js.map
